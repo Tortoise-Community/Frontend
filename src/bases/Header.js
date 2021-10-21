@@ -45,7 +45,7 @@ export default function Header(){
                                     href="/"><span>Something else</span></a></li>
                             </ul>
                         </li>
-                        <li className="login"><a className="btn btn-sm btn-login btn-primary"><i className={"fas fa-lock fa-sm"}/> login</a></li>
+                        <li className="login"><button className="btn btn-sm btn-login btn-primary"><i className={"fas fa-lock fa-sm"}/> login</button></li>
                     </ul>
                 </div>
             </nav>
@@ -103,7 +103,7 @@ export default function Header(){
                                             href="/"><span>Shop</span></a></li>
                                     </ul>
                                 </li>
-                                <li className="login"><a className={"btn btn-sm btn-login"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
+                                <li className="login"><a className={"btn btn-sm btn-login btn-primary"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
                             </ul>
                         </div>
                     </div>
