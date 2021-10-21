@@ -7,11 +7,11 @@ export default function Header(){
         <header>
             <nav className="nav-placeholder">
                 <div className="container">
-                    <button className="sandwich-btn" data-target="#mobileMenu" data-toggle="modal">
+                    <a className="sandwich-btn" data-bs-target="#mobileMenu" data-bs-toggle="modal">
                         <span/>
                         <span/>
                         <span/>
-                    </button>
+                    </a>
 
                     <a href="/" className="custom-logo-link" rel="home"><img width="462" height="84"
                                                                                      src={logo}
@@ -45,7 +45,7 @@ export default function Header(){
                                     href="/"><span>Something else</span></a></li>
                             </ul>
                         </li>
-                        <li className="login"><a className="btn btn-sm btn-login btn-primary"><i className={"fas fa-lock fa-sm"}/> login</a></li>
+                        <li className="login"><button className="btn btn-sm btn-login btn-primary"><i className={"fas fa-lock fa-sm"}/> login</button></li>
                     </ul>
                 </div>
             </nav>
@@ -63,7 +63,7 @@ export default function Header(){
             <div className="mobile-menu-modal modal fade in" id="mobileMenu" tabIndex="-1" role="dialog">
                 <div className="modal-dialog modal-lg" role="document">
                     <div className="modal-content mobile-menu">
-                        <button type="button" className="btnclose" data-dismiss="modal">&times;</button>
+                        <a type="button" className="btnclose" data-bs-dismiss="modal">&times;</a>
 
                         <div className="modal-body">
                             <ul id="mobile_menu" className="menu">
@@ -72,38 +72,26 @@ export default function Header(){
                                     <a href="index.htm"><span>Home</span></a></li>
                                 <li
                                     className="menu-item"><a
-                                    href="/"><span>News</span></a></li>
-                                <li
-                                    className="menu-item"><a
-                                    href="/"><span>Teams</span></a></li>
-                                <li
-                                    className="menu-item"><a
-                                    href="/"><span>Sponsors</span></a></li>
+                                    href="/"><span>Events</span></a></li>
                                 <li
                                     className="menu-item"><a
                                     href="/"><span>About</span></a></li>
                                 <li
                                     className="menu-item"><a
-                                    href="/"><span>Tournaments</span></a></li>
-                                <li
-                                    className="menu-item"><a
-                                    href="/"><span>Streams</span></a></li>
+                                    href="/"><span>Contact</span></a></li>
                                 <li
                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
                                     <a><span>More</span></a>
                                     <ul className="sub-menu">
                                         <li
                                             className="menu-item"><a
-                                            href="/"><span>Matches</span></a></li>
+                                            href="/"><span>Privacy</span></a></li>
                                         <li
                                             className="menu-item"><a
-                                            href="/"><span>Gallery</span></a></li>
-                                        <li
-                                            className="menu-item"><a
-                                            href="/"><span>Shop</span></a></li>
+                                            href="/"><span>Rules</span></a></li>
                                     </ul>
                                 </li>
-                                <li className="login"><a className={"btn btn-sm btn-login"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
+                                <li className="login"><a className={"btn btn-sm btn-login btn-outline-primary"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
                             </ul>
                         </div>
                     </div>
