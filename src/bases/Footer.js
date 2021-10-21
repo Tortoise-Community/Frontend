@@ -48,16 +48,6 @@ export default function Footer(){
                             </li>
                         </ul>
                     </div>
-                    <div className="footer-widget footer-nav-links">
-                        <ul>
-                            <li>
-                                Latest News
-                            </li>
-                            <li>
-                                <a href="/">Test </a>
-                            </li>
-                        </ul>
-                    </div>
                     <div className="footer-widget">
                         <ul id="footer_left" className="menu">
                             <li>About</li>
