@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "cubano";
+    src: url("fonts/cubano/cubano-regular-webfont.eot");
+    src: url("fonts/cubano/cubano-regular-webfont.woff") format("woff"),
+    url("fonts/cubano/cubano-regular-webfont.svg#filename") format("svg");
+}
+
+:root {
+    --bg: #0a0c11;
+    --primary: #46E9DC;
+    --white: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'cubano' !important;
+}
+
+/***   BACKGROUND STYLES   ***/
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+/***   TEXT STYLES   ***/
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/***   BUTTON STYLES   ***/
+.btn-primary {
+    background-color: var(--primary) !important;
+    color: #000000;
+    border: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary.focus {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0 rgba(17, 205, 239, 0.5);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    background-color: transparent;
+    background-image: none;
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    color: var(--bg);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.front-header {
+    background: -webkit-linear-gradient(180deg, #12DFF3, #AFFCAF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.front-quote {
+    color: #61EED1;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 19px !important;
+}

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #fff;
+}
+a{
+    word-break: break-word;
+}
+
+.sandwich-btn {
+    padding: 0;
+    display: none;
+}
+.sandwich-btn span {
+    width: 40px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.sandwich-btn span:nth-child(2) {
+    width: 33px;
+}
+.sandwich-btn span:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+@media screen and (max-width: 992px) {
+    .sandwich-btn {
+        display: block;
+    }
+}
+@media screen and (max-width: 460px) {
+    .sandwich-btn {
+        margin-left: 0;
+    }
+}
+
+header,
+nav,
+section {
+    display: block;
+}
+.relative,
+ul.members li,
+.featured-box,
+.container,
+.news-container,
+header,
+header .nav-placeholder,
+header .nav-placeholder .navbar li,
+header .nav-placeholder .login,
+.section-header ul li
+{
+    position: relative;
+}
+.absolute,
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu,
+header .hero-slider
+{
+    position: absolute;
+}
+header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: #0a0c11;
+    height: 988px;
+    padding-bottom: 100px;
+}
+.btn-login{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+@media screen and (max-width: 992px) {
+    header {
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        -webkit-align-content: center;
+        align-content: center;
+    }
+}
+header.is-page {
+    height: auto;
+    padding: 0;
+}
+header.is-page[data-image]:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+header .nav-placeholder {
+    padding: 52px 0;
+    z-index: 999;
+}
+@media screen and (max-width: 992px) {
+    header .nav-placeholder {
+        padding: 32px 0;
+    }
+}
+header .nav-placeholder .container,
+header .nav-placeholder .news-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+header .nav-placeholder .container .custom-logo-link img,
+header .nav-placeholder .news-container .custom-logo-link img {
+    max-width: 240px;
+    max-height: 60px;
+    height: auto;
+}
+header .nav-placeholder .container .logo-img img,
+header .nav-placeholder .news-container .logo-img img {
+    max-height: 40px;
+}
+@media screen and (max-width: 992px) {
+    header .nav-placeholder .container .logo-img,
+    header .nav-placeholder .news-container .logo-img {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 1270px) {
+    header .nav-placeholder .container,
+    header .nav-placeholder .news-container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header .nav-placeholder .container,
+    header .nav-placeholder .news-container {
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+header .nav-placeholder a {
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+header .nav-placeholder a:hover {
+    color: #46E9DC;
+}
+header .nav-placeholder .navbar {
+    margin-left: auto;
+    display: -webkit-flex;
+    display: flex;
+}
+@media screen and (max-width: 992px) {
+    header .nav-placeholder .navbar {
+        display: none;
+    }
+}
+header .nav-placeholder .navbar li {
+    line-height: 1;
+}
+header .nav-placeholder .navbar li a {
+    cursor: pointer;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu li {
+    margin: 10px 0;
+}
+header .nav-placeholder .navbar li {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .menu-item-has-children > a::before {
+    content: "\f104";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    left: 20px;
+    top: calc(50% - 7px);
+    color: #fff;
+    position: absolute;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .menu-item-has-children .sub-menu {
+    top: 0;
+    right: 100%;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu {
+    top: 30px;
+    right: 0;
+    width: 180px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    z-index: 9;
+    display: none;
+    text-align: right;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu:before {
+    content: "";
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    top: -16px;
+    right: 0;
+    position: absolute;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu li {
+    margin: 0 !important;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu li a {
+    background: #7BF2C6;
+    display: block;
+    padding: 15px 10px;
+    font-weight: bold;
+    color: #000000;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu li a:hover {
+    background: #46E9DC;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu li a:hover {
+    color: #fff !important;
+}
+header .nav-placeholder .navbar li.menu-item-has-children .sub-menu li:hover a:after {
+    opacity: 0 !important;
+}
+header .nav-placeholder .navbar li.menu-item-has-children:hover a:after {
+    opacity: 0 !important;
+}
+header .nav-placeholder .navbar li.menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+header .nav-placeholder .navbar li:not(.login):not(:last-of-type) {
+    margin-right: 42px;
+}
+@media screen and (max-width: 1040px) {
+    header .nav-placeholder .navbar li:not(.login):not(:last-of-type) {
+        margin-right: 32px;
+    }
+}
+header .nav-placeholder .navbar li:not(.login).active > a,
+header .nav-placeholder .navbar li:not(.login):hover > a {
+    color: #46E9DC;
+}
+header .nav-placeholder .navbar li:not(.login).active > a:after,
+header .nav-placeholder .navbar li:not(.login):hover > a:after {
+    opacity: 1;
+    width: 100%;
+}
+header .nav-placeholder .navbar li:not(.login) > a:after {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: #46E9DC;
+    margin: 8px auto 0;
+    position: absolute;
+    opacity: 0;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+header .nav-placeholder .navbar li:not(.login) a {
+    font: 400 0.875em/18px "Montserrat", sans-serif;
+}
+header .nav-placeholder .login {
+    margin-left: 50px;
+}
+header .nav-placeholder .login a {
+    outline: none;
+}
+header .nav-placeholder .login a:hover:after {
+    display: none;
+}
+header .nav-placeholder .login:before {
+    content: "";
+    background: #46E9DC;
+    width: 1px;
+    height: 46px;
+    position: absolute;
+    top: calc(50% - 23px);
+    left: -50px;
+}
+@media screen and (max-width: 1200px) {
+    header .nav-placeholder .login:before {
+        left: -30px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header .nav-placeholder .login:before {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    header .nav-placeholder .login {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header .nav-placeholder .login {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 460px) {
+    header .nav-placeholder .login {
+        margin-right: 0;
+    }
+}
