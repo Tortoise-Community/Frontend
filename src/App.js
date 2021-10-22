@@ -1,8 +1,16 @@
-import Index from "./pages/Index"
+import Index from "./pages/Index";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+
 
 function App() {
   return (
-      <Index/>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Index />
+          </Route>
+        </Switch>
+      </BrowserRouter>
   );
 }
 
