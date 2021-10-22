@@ -1,12 +1,8 @@
-import Header from "./bases/Header";
-import Footer from "./bases/Footer";
+import Index from "./pages/Index"
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Footer/>
-    </div>
+      <Index/>
   );
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import logo from "../logo.svg";
 import "./styles/Header.css";
 
-export default function Header(){
+export default function Header(props){
     return (
         <header>
             <nav className="nav-placeholder">
@@ -49,17 +49,9 @@ export default function Header(){
                     </ul>
                 </div>
             </nav>
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-4 col-lg-4">
-                    </div>
-                    <div className="col-xl-7 col-lg-8">
-                        <h1 className="text-uppercase front-header m-2">Tortoise Python Community</h1><br/>
-                        <p className="front-quote m-2">"We called him Tortoise because he taught us!"</p>
-                        <button className="btn btn-outline-primary m-2">Join now <i className="bi bi-arrow-right-square-fill"/></button>
-                    </div>
-                </div>
-            </div>
+
+            {props.children}
+
             <div className="mobile-menu-modal modal fade in" id="mobileMenu" tabIndex="-1" role="dialog">
                 <div className="modal-dialog modal-lg" role="document">
                     <div className="modal-content mobile-menu">
@@ -91,7 +83,7 @@ export default function Header(){
                                             href="/"><span>Rules</span></a></li>
                                     </ul>
                                 </li>
-                                <li className="login"><a className={"btn btn-sm btn-login btn-outline-primary"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
+                                <li className="login"><a className={"btn btn-sm btn-login btn-primary"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
                             </ul>
                         </div>
                     </div>
