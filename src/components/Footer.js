@@ -6,7 +6,6 @@ import "./styles/Footer.css";
 export default function Footer(){
     return (
 
-
         <footer>
             <div className="container">
                 <div className="footer-content">
@@ -48,16 +47,6 @@ export default function Footer(){
                             </li>
                         </ul>
                     </div>
-                    <div className="footer-widget footer-nav-links">
-                        <ul>
-                            <li>
-                                Latest News
-                            </li>
-                            <li>
-                                <a href="/">Test </a>
-                            </li>
-                        </ul>
-                    </div>
                     <div className="footer-widget">
                         <ul id="footer_left" className="menu">
                             <li>About</li>
@@ -77,9 +66,11 @@ export default function Footer(){
             </div>
             <div className="bottom-bar">
                 <div className="container">
-                    <div className="back-to-top">
-                        <i className="fas fa-angle-up"/>
-                    </div>
+                    <a href="#">
+                        <div className="back-to-top">
+                            <i className="fas fa-angle-up"/>
+                        </div>
+                    </a>
                     <div className="copyright">
                         <p>
                             <a href="/">Tortoise Community</a>
