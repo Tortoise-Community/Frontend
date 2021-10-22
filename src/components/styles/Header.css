@@ -80,8 +80,7 @@ header {
     -webkit-flex-direction: column;
     flex-direction: column;
     background-color: #0a0c11;
-    height: 988px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 .btn-login{
     padding-right: 15px !important;
