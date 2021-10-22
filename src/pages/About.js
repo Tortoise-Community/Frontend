@@ -4,7 +4,9 @@ import Footer from "../components/Footer";
 
 export default function About() {
     return (
-        <Header/>
-        <Footer/>
+        <div className="About">
+            <Header/>
+            <Footer/>
+        </div>
     )
 }

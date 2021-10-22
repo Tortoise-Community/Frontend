@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../logo.svg";
 import "./styles/Header.css";
+import {Link} from "react-router-dom";
 
 export default function Header(props){
     return (
@@ -18,31 +19,31 @@ export default function Header(props){
                                                                                      className="custom-logo"
                                                                                      alt="Logo" loading="lazy"/></a>
                     <ul id="header_menu" className="navbar">
-                        <li
-                            className="menu-item">
-                            <a href="/"><span>Home</span></a></li>
-                        <li
-                            className="menu-item"><a
-                            href="/"><span>Events</span></a></li>
-                        <li
-                            className="menu-item"><a
-                            href="/"><span>About</span></a></li>
-                        <li
-                            className="menu-item"><a
-                            href="/"><span>Contact</span></a></li>
+                        <li className="menu-item">
+                            <Link to="/"><span>Home</span></Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link to="/events"><span>Events</span></Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link to="/about"><span>About</span></Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link to="/contact"><span>Contact</span></Link>
+                        </li>
                         <li
                             className="menu-item menu-item-has-children">
-                            <a href="/"><span>More</span></a>
+                            <a href="#!"><span>More</span></a>
                             <ul className="sub-menu">
-                                <li
-                                    className="menu-item"><a
-                                    href="/"><span>Rules</span></a></li>
-                                <li
-                                    className="menu-item"><a
-                                    href="/"><span>Privacy</span></a></li>
-                                <li
-                                    className="menu-item"><a
-                                    href="/"><span>Something else</span></a></li>
+                                <li className="menu-item">
+                                    <Link to="/rules"><span>Rules</span></Link>
+                                </li>
+                                <li className="menu-item">
+                                    <Link to="/privacy"><span>Privacy</span></Link>
+                                </li>
+                                <li className="menu-item">
+                                    <Link to="/privacy"><span>Resources</span></Link>
+                                </li>
                             </ul>
                         </li>
                         <li className="login"><button className="btn btn-sm btn-login btn-primary"><i className={"fas fa-lock fa-sm"}/> login</button></li>

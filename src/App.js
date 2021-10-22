@@ -8,9 +8,12 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Index}/>
-          <Route path="/events" component={Index}/>
+          <Route path="/events" component={About}/>
           <Route path="/about" component={About}/>
-          <Route path="/contact" component={Index}/>
+          <Route path="/contact" component={About}/>
+          <Route path="/privacy" component={About}/>
+          <Route path="/rules" component={About}/>
+          <Route path="/resources" component={About}/>
         </Switch>
       </BrowserRouter>
   );
