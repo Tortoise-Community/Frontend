@@ -26,7 +26,7 @@ function Events() {
             <Header >
                 <div style={{ color: 'white' }} className='white p-5'>
                     <h1 className='display-4 mb-2'>Events</h1>
-                    <div className='flex container-fluid mt-5'>
+                    <div className='flex mt-5' style={{ width: 'calc(80%)' }}>
                         {/* Event Mapping */}
                         {fakeEvents.map((fakeEvent) => (
                             <Event
