@@ -4,7 +4,7 @@ import './styles/Event.css'
 
 function Event({title, slug, desc}) {
     return (
-        <Link href={`/events/${slug}`}>
+        <Link to={`/events/${slug}`}>
             <div className='flex container-fluid event mb-5 p-5 m-l-0 m-r-0'>
                 <h1>{title}</h1>
                 <p>{desc}</p>
