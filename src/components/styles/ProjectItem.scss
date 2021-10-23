@@ -3,21 +3,24 @@ h5 {
     font-family: 'Sofia Pro', sans-serif !important;
     font-weight: bold;
 }
-
-.card:hover {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    -webkit-transform: translateY(-3px) translateZ(0);
-    -moz-transform: translateY(-3px) translateZ(0);
-    transform: translateY(-3px) translateZ(0);
+.card {
+    &:hover {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+        -webkit-transform: translateY(-3px) translateZ(0);
+        -moz-transform: translateY(-3px) translateZ(0);
+        transform: translateY(-3px) translateZ(0);
+    }
 }
-.card-header, .card-footer{
+.card-header {
     border: none;
 }
-
-.list-inline{
+.card-footer {
+    border: none;
+}
+.list-inline {
     display: flex;
 }
-.list-inline-item{
+.list-inline-item {
     font-size: 14px !important;
     flex: 1;
     text-align: center;

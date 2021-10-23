@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './styles/Event.css'
+import './styles/Event.scss'
 
 function Event({title, slug, desc}) {
     return (

@@ -9,10 +9,14 @@
     --bg: #0a0c11;
     --primary: #46E9DC;
     --white: #ffffff;
+    --secondary: #0a0c11;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'cubano' !important;
+}
+p, span, label {
+    font-family: "Sofia Pro", sans-serif;
 }
 
 /***   BACKGROUND STYLES   ***/
@@ -56,6 +60,38 @@ h1,h2,h3,h4,h5,h6{
     background-color: var(--primary);
     border-color: var(--primary);
 }
+
+.btn-secondary {
+    background-color: var(--secondary) !important;
+    color: #000000;
+    border: none;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+}
+
+.btn-secondary:hover {
+    color: var(--bg);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary.focus {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0 rgba(17, 205, 239, 0.5);
+}
+
+.btn-ouitline-secondary {
+    color: var(--secondary);
+    background-color: transparent;
+    background-image: none;
+    border-color: var(--secondary);
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
 .front-header {
     background: -webkit-linear-gradient(180deg, #12DFF3, #AFFCAF);
     -webkit-background-clip: text;
@@ -67,4 +103,7 @@ h1,h2,h3,h4,h5,h6{
     color: #61EED1;
     font-family: 'Sofia Pro', sans-serif;
     font-size: 19px !important;
+}
+.box-sizing-border-box{
+    box-sizing: border-box;
 }
