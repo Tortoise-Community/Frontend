@@ -1,5 +1,8 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import { useParams } from 'react-router-dom'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 function EventPage() {
 
@@ -7,7 +10,14 @@ function EventPage() {
 
     return (
         <div>
-            {slug}
+            <Header>
+                <div className='text-white'>
+                    <ReactMarkdown>
+                        # Hello *world*
+                    </ReactMarkdown>
+                </div>
+            </Header>
+            <Footer/>
         </div>
     )
 }
