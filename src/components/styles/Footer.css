@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia Pro&display=swap');
 
 ul {
     padding: 0;
@@ -16,7 +16,7 @@ footer .sponsors {
 footer {
     overflow: hidden;
     background-color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sofia Pro', sans-serif;
     display: block;
 }
 footer .custom-logo-link img {
@@ -46,7 +46,7 @@ footer .back-to-top {
     height: 40px;
 }
 .section-header{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sofia Pro', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -114,7 +114,7 @@ footer .footer-content .footer-widget > ul > li:last-of-type {
     margin-bottom: 0;
 }
 footer .footer-content .footer-widget > ul > li > a {
-    font: 500 0.875em/1 "Montserrat", sans-serif;
+    font: 500 0.875em/1 "Sofia Pro", sans-serif, sans-serif;
     color: #636f7d;
     text-transform: uppercase;
     -webkit-transition: color 0.8s ease-in-out;
@@ -132,7 +132,7 @@ footer .footer-content .footer-widget > ul > li ul.sub-menu {
     padding-left: 15px;
 }
 footer .footer-content .footer-widget > ul > li ul.sub-menu li a {
-    font: 700 0.75em/1 "Montserrat", sans-serif;
+    font: 700 0.75em/1 "Sofia Pro", sans-serif, sans-serif;
     color: #636f7d;
     text-transform: uppercase;
 }
@@ -140,7 +140,7 @@ footer .footer-content .footer-widget > ul > li ul.sub-menu li:not(:last-child) 
     padding-bottom: 15px;
 }
 footer .footer-content .footer-widget > ul > li:first-of-type {
-    font: 1.375em/1 "Montserrat", sans-serif;
+    font: 1.375em/1 "Sofia Pro", sans-serif, sans-serif;
     color: #fff;
     margin-bottom: 44px;
 }
@@ -170,12 +170,12 @@ footer .footer-content .footer-widget > ul > li .details {
     justify-content: center;
 }
 footer .footer-content .footer-widget > ul > li .details span {
-    font: 700 1em/1 "Montserrat", sans-serif;
+    font: 700 1em/1 "Sofia Pro", sans-serif, sans-serif;
     color: #fff;
     margin-bottom: 4px;
 }
 footer .footer-content .footer-widget > ul > li .details a {
-    font: 700 0.75em/1 "Montserrat", sans-serif;
+    font: 700 0.75em/1 "Sofia Pro", sans-serif, sans-serif;
     color: #636f7d;
     -webkit-transition: color 0.6s ease-in-out;
     transition: color 0.6s ease-in-out;
@@ -233,7 +233,7 @@ footer .footer-content .footer-widget.footer-nav-links li:last-of-type {
     border: 0;
 }
 footer .footer-content .footer-widget.footer-nav-links li:last-of-type a {
-    font: 500 0.875em/1 "Montserrat", sans-serif;
+    font: 500 0.875em/1 "Sofia Pro", sans-serif, sans-serif;
     color: #fff;
 }
 footer .footer-content .footer-widget.footer-nav-links li:last-of-type a:hover {
@@ -246,7 +246,7 @@ footer .footer-content .footer-widget.footer-nav-links li:last-of-type a i {
 }
 footer .footer-content .footer-widget.footer-nav-links a {
     color: #636f7d;
-    font: 500 0.875em "Montserrat", sans-serif;
+    font: 500 0.875em "Sofia Pro", sans-serif, sans-serif;
     -webkit-transition: color 0.6s ease-in-out;
     transition: color 0.6s ease-in-out;
     text-transform: none !important;
@@ -295,7 +295,7 @@ footer .bottom-bar a:hover {
 }
 footer .bottom-bar a,
 footer .bottom-bar p {
-    font: 1000 0.75em/1 "Montserrat";
+    font: 1000 0.75em/1 "Sofia Pro", sans-serif;
     color: #fff;
 }
 footer .bottom-bar p {
@@ -352,7 +352,7 @@ footer .bottom-bar .bottom-links li:not(:last-of-type) {
 }
 footer .bottom-bar .bottom-links li:not(:last-of-type):after {
     content: "\f111";
-    font: 900 5px "Montserrat";
+    font: 900 5px "Sofia Pro", sans-serif;
     margin-left: 6px;
 }
 footer .bottom-bar .bottom-links li {
@@ -361,7 +361,7 @@ footer .bottom-bar .bottom-links li {
 }
 footer .bottom-bar .bottom-links li.menu-item-has-children .menu-item-has-children > a::before {
     content: "\f104";
-    font-family: "Montserrat", sans-serif;
+    font-family: "Sofia Pro", sans-serif, sans-serif;
     font-weight: bold;
     left: 20px;
     top: calc(50% - 7px);

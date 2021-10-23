@@ -42,14 +42,14 @@ export default function Footer(){
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <i className="bi bi-cpu"/>
-                                <a href="#">
-                                    <div className="details">
-                                        <span>API</span>
-                                    </div>
-                                </a>
-                            </li>
+                            {/*<li>*/}
+                            {/*    <i className="bi bi-cpu"/>*/}
+                            {/*    <a href="#">*/}
+                            {/*        <div className="details">*/}
+                            {/*            <span>API</span>*/}
+                            {/*        </div>*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                         </ul>
                     </div>
                     <div className="footer-widget">
