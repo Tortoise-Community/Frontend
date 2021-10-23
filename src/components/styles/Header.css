@@ -286,7 +286,7 @@ header .nav-placeholder .navbar li:not(.login) > a:after {
     right: 0;
 }
 header .nav-placeholder .navbar li:not(.login) a {
-    font: 500 0.875em/18px "Sofia Pro", "Montserrat", sans-serif;
+    font: 500 16px "Sofia Pro", sans-serif;
 }
 header .nav-placeholder .login {
     margin-left: 50px;
@@ -334,6 +334,7 @@ header .nav-placeholder .login:before {
     }
 }
 
+/*STYLE FOR MOBILE MENU BUTTON*/
 .sandwich-btn {
     padding: 0;
     display: none;
@@ -366,6 +367,8 @@ header .nav-placeholder .login:before {
     }
 }
 
+
+/*STYLES FOR MOBILE MENU MODEL POPUP*/
 .mobile-menu-modal {
     background: rgba(2, 5, 7, 0.95);
     z-index: 99999;

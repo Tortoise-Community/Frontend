@@ -2,6 +2,7 @@ import React from 'react';
 
 import test from "../logo.svg";
 import "./styles/Footer.css";
+import {Link} from "react-router-dom";
 
 export default function Footer(){
     return (
@@ -34,32 +35,38 @@ export default function Footer(){
                                 Services
                             </li>
                             <li>
-                                <i className="bi bi-file-binary"/>
-                                <div className="details">
-                                    <span>Pastebin</span>
-                                </div>
+                                <i className="bi bi-file-text"/>
+                                <a href="#!">
+                                    <div className="details">
+                                        <span>Pastebin</span>
+                                    </div>
+                                </a>
                             </li>
                             <li>
                                 <i className="bi bi-cpu"/>
-                                <div className="details">
-                                    <span>API</span>
-                                </div>
+                                <a href="#">
+                                    <div className="details">
+                                        <span>API</span>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div className="footer-widget">
-                        <ul id="footer_left" className="menu">
+                        <ul className="menu">
                             <li>About</li>
-                            <li className="menu-item"><a href="/"><span className="title">Code of Conduct</span></a></li>
-                            <li className="menu-item"><a href="/"><span className="title">Privacy Policy</span></a></li>
+                            <li className="menu-item"><a href="/rules"><span className="title">Rules</span></a></li>
+                            <li className="menu-item"><a href="/privacy-policy"><span className="title">Privacy Policy</span></a></li>
+                            <li className="menu-item"><a href="/code-of-conduct"><span className="title">Code of Conduct</span></a></li>
                         </ul>
                     </div>
                     <div className="footer-widget">
-                        <ul id="footer_right" className="menu">
+                        <ul className="menu">
                             <li>Menu</li>
-                            <li className="menu-item"><a href="/"><span className="title">Home</span></a></li>
-                            <li className="menu-item"><a href="/"><span className="title">Events</span></a></li>
-                            <li className="menu-item"><a href="/"><span className="title">Contact</span></a></li>
+                            <li className="menu-item"><Link to="/"><span className="title">Home</span></Link></li>
+                            <li className="menu-item"><Link to="/events"><span className="title">Events</span></Link></li>
+                            <li className="menu-item"><Link to="/about"><span className="title">About</span></Link></li>
+                            <li className="menu-item"><Link to="/contact"><span className="title">Contact</span></Link></li>
                         </ul>
                     </div>
                 </div>

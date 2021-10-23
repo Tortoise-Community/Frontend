@@ -46,7 +46,7 @@ export default function Header(props){
                                 </li>
                             </ul>
                         </li>
-                        <li className="login"><button className="btn btn-sm btn-login btn-primary"><i className={"fas fa-lock fa-sm"}/> login</button></li>
+                        <li className="login"><button className="btn-primary btn-login btn-sm"><i className={"fas fa-lock fa-sm"}/> login</button></li>
                     </ul>
                 </div>
             </nav>
@@ -84,7 +84,7 @@ export default function Header(props){
                                             href="/"><span>Rules</span></a></li>
                                     </ul>
                                 </li>
-                                <li className="login"><a className={"btn btn-sm btn-login btn-primary"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</a></li>
+                                <li className="login"><button className={"btn btn-primary btn-login btn-sm"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</button></li>
                             </ul>
                         </div>
                     </div>
