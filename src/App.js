@@ -2,13 +2,14 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 import Index from "./pages/Index";
 import About from "./pages/About";
+import Events from "./pages/Events";
 
 function App() {
   return (
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Index}/>
-          <Route path="/events" component={About}/>
+          <Route path="/events" component={Events}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={About}/>
           <Route path="/privacy" component={About}/>
