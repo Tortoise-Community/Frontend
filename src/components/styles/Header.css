@@ -286,7 +286,7 @@ header .nav-placeholder .navbar li:not(.login) > a:after {
     right: 0;
 }
 header .nav-placeholder .navbar li:not(.login) a {
-    font: 400 0.875em/18px "Montserrat", sans-serif;
+    font: 500 0.875em/18px "Sofia Pro", "Montserrat", sans-serif;
 }
 header .nav-placeholder .login {
     margin-left: 50px;
