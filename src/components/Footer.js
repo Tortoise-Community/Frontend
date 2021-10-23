@@ -1,7 +1,7 @@
 import React from 'react';
 
 import test from "../logo.svg";
-import "./styles/Footer.css";
+import "./styles/Footer.scss";
 import {Link} from "react-router-dom";
 
 export default function Footer(){

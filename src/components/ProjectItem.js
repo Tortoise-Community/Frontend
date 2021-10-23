@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/ProjectItem.css";
+import "./styles/ProjectItem.scss";
 
 export default function ProjectItem() {
     return (
