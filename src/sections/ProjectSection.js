@@ -10,6 +10,7 @@ export default function ProjectSection() {
                 <ProjectItem/>
                 <ProjectItem/>
                 <ProjectItem/>
+                <ProjectItem/>
            </div>
        </Section>
    )

@@ -3,6 +3,7 @@ import "./styles/ProjectItem.css";
 
 export default function ProjectItem() {
     return (
+        // TODO: Refactor later.
         <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="card pt-md-3 px-md-2 pb--3">
                 <a className="stretched-link" href="#"><h5 className="card-header bg-transparent">

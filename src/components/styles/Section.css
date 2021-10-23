@@ -1,9 +1,10 @@
 section {
-    /*display: block;*/
+    display: block;
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
     padding-top: 40px;
     padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .section-header {
