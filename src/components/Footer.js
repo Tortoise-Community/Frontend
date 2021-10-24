@@ -57,7 +57,6 @@ export default function Footer(){
                             <li>About</li>
                             <li className="menu-item"><a href="/rules"><span className="title">Rules</span></a></li>
                             <li className="menu-item"><a href="/privacy-policy"><span className="title">Privacy Policy</span></a></li>
-                            <li className="menu-item"><a href="/code-of-conduct"><span className="title">Code of Conduct</span></a></li>
                         </ul>
                     </div>
                     <div className="footer-widget">

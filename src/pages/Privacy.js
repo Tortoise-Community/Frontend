@@ -3,11 +3,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 
-export default function About() {
+export default function Privacy() {
     return (
         <div>
             <Header/>
-            <Section title={"About Us"}>
+            <Section title={"Privacy Policy"}>
             </Section>
             <Footer/>
         </div>
