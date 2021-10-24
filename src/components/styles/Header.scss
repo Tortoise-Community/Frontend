@@ -175,7 +175,6 @@ header {
                 }
             }
             margin-left: auto;
-            display: -webkit-flex;
             display: flex;
         }
         .login {
@@ -236,7 +235,6 @@ header {
             }
         }
         a {
-            -webkit-transition: color 0.3s ease-in-out;
             transition: color 0.3s ease-in-out;
             cursor: pointer;
             &:hover {
@@ -314,7 +312,7 @@ header.is-page[data-image] {
             text-align: center;
             height: 100%;
             margin-top: 20%;
-            .btnclose {
+            .btn-close {
                 position: absolute;
                 color: #fff;
                 font-size: 50px;
@@ -330,11 +328,8 @@ header.is-page[data-image] {
                 margin-left: auto;
             }
             .modal-body {
-                display: -webkit-flex;
                 display: flex;
-                -webkit-flex-direction: column;
                 flex-direction: column;
-                -webkit-justify-content: center;
                 justify-content: start;
                 height: 100%;
                 ul {

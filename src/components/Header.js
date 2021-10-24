@@ -39,14 +39,11 @@ export default function Header(props){
                                     <Link to="/rules"><span>Rules</span></Link>
                                 </li>
                                 <li className="menu-item">
-                                    <Link to="/privacy"><span>Privacy</span></Link>
-                                </li>
-                                <li className="menu-item">
-                                    <Link to="/privacy"><span>Resources</span></Link>
+                                    <Link to="/privacy-policy"><span>Privacy</span></Link>
                                 </li>
                             </ul>
                         </li>
-                        <li className="login"><button className="btn-primary btn-login btn-sm"><i className={"fas fa-lock fa-sm"}/> login</button></li>
+                        {/*<li className="login"><button className="btn-primary btn-login btn-sm"><i className={"fas fa-lock fa-sm"}/> login</button></li>*/}
                     </ul>
                 </div>
             </nav>
@@ -56,7 +53,7 @@ export default function Header(props){
             <div className="mobile-menu-modal modal fade in" id="mobileMenu" tabIndex="-1" role="dialog">
                 <div className="modal-dialog modal-lg" role="document">
                     <div className="modal-content mobile-menu">
-                        <a type="button" className="btnclose" data-bs-dismiss="modal">&times;</a>
+                        <a type="button" className="btn-close" data-bs-dismiss="modal">&times;</a>
 
                         <div className="modal-body">
                             <ul id="mobile_menu" className="menu">
@@ -84,7 +81,7 @@ export default function Header(props){
                                             href="/"><span>Rules</span></a></li>
                                     </ul>
                                 </li>
-                                <li className="login"><button className={"btn btn-primary btn-login btn-sm"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</button></li>
+                                {/*<li className="login"><button className={"btn btn-primary btn-login btn-sm"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</button></li>*/}
                             </ul>
                         </div>
                     </div>
