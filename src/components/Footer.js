@@ -1,7 +1,7 @@
 import React from 'react';
 
 import test from "../logo.svg";
-import "./styles/Footer.css";
+import "./styles/Footer.scss";
 import {Link} from "react-router-dom";
 
 export default function Footer(){
@@ -42,14 +42,14 @@ export default function Footer(){
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <i className="bi bi-cpu"/>
-                                <a href="#">
-                                    <div className="details">
-                                        <span>API</span>
-                                    </div>
-                                </a>
-                            </li>
+                            {/*<li>*/}
+                            {/*    <i className="bi bi-cpu"/>*/}
+                            {/*    <a href="#">*/}
+                            {/*        <div className="details">*/}
+                            {/*            <span>API</span>*/}
+                            {/*        </div>*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                         </ul>
                     </div>
                     <div className="footer-widget">
