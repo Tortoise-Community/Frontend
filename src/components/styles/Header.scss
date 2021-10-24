@@ -1,6 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
-
-$primary: #46E9DC;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
     box-sizing: inherit;
@@ -67,7 +65,7 @@ header {
                     }
                     &:hover {
                         >a {
-                            color: $primary;
+                            color: #46E9DC;
                             &:after {
                                 opacity: 1;
                                 width: 100%;
@@ -80,7 +78,7 @@ header {
                             content: "";
                             width: 16px;
                             height: 1px;
-                            background-color: $primary;
+                            background-color: #46E9DC;
                             margin: 8px auto 0;
                             position: absolute;
                             opacity: 0;
@@ -95,7 +93,7 @@ header {
                 }
                 &:not(.login).active {
                     >a {
-                        color: $primary;
+                        color: #46E9DC;
                         &:after {
                             opacity: 1;
                             width: 100%;
@@ -116,7 +114,7 @@ header {
                     display: none;
                     text-align: right;
                     li {
-                        margin: 10px 0;
+                        margin: 0 !important;
                         padding: 0;
                         border-bottom: 1px solid transparent;
                         a {
@@ -126,7 +124,7 @@ header {
                             font-weight: bold;
                             color: #000000;
                             &:hover {
-                                background: $primary;
+                                background: #46E9DC;
                                 color: #fff !important;
                             }
                         }
@@ -177,6 +175,7 @@ header {
                 }
             }
             margin-left: auto;
+            display: -webkit-flex;
             display: flex;
         }
         .login {
@@ -192,7 +191,7 @@ header {
             }
             &:before {
                 content: "";
-                background: $primary;
+                background: #46E9DC;
                 width: 1px;
                 height: 46px;
                 position: absolute;
@@ -237,10 +236,11 @@ header {
             }
         }
         a {
+            -webkit-transition: color 0.3s ease-in-out;
             transition: color 0.3s ease-in-out;
             cursor: pointer;
             &:hover {
-                color: $primary;
+                color: #46E9DC;
             }
         }
     }
@@ -314,7 +314,7 @@ header.is-page[data-image] {
             text-align: center;
             height: 100%;
             margin-top: 20%;
-            .btn-close {
+            .btnclose {
                 position: absolute;
                 color: #fff;
                 font-size: 50px;
@@ -330,8 +330,11 @@ header.is-page[data-image] {
                 margin-left: auto;
             }
             .modal-body {
+                display: -webkit-flex;
                 display: flex;
+                -webkit-flex-direction: column;
                 flex-direction: column;
+                -webkit-justify-content: center;
                 justify-content: start;
                 height: 100%;
                 ul {

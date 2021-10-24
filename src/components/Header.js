@@ -56,7 +56,7 @@ export default function Header(props){
             <div className="mobile-menu-modal modal fade in" id="mobileMenu" tabIndex="-1" role="dialog">
                 <div className="modal-dialog modal-lg" role="document">
                     <div className="modal-content mobile-menu">
-                        <a type="button" className="btn-close" data-bs-dismiss="modal">&times;</a>
+                        <a type="button" className="btnclose" data-bs-dismiss="modal">&times;</a>
 
                         <div className="modal-body">
                             <ul id="mobile_menu" className="menu">
