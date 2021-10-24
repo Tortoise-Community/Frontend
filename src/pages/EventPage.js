@@ -11,7 +11,7 @@ function EventPage() {
     return (
         <div>
             <Header/>
-            <div className='text-white p-5'>
+            <div className='text-black p-5'>
                 <ReactMarkdown>
                     # Hello *world*
                 </ReactMarkdown>
