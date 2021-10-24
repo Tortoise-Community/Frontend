@@ -2,15 +2,26 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './styles/Event.scss'
 
-function Event({title, slug, desc}) {
+export default function Event({title, slug, desc}) {
     return (
-        <Link to={`/events/${slug}`}>
-            <div className='flex container-fluid event mb-5 p-5 m-l-0 m-r-0'>
-                <h1>{title}</h1>
-                <p>{desc}</p>
+        <Link className="event-box border border-1" to={`/events/${slug}`}>
+            <div className="event-body">
+                <h4>Halloween Codejam</h4>
+                <span className="date">Oct.20.2021 - Oct.31.2021</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div className="event-footer">
+                <div className="col">
+                    <div className="col-item">
+                        <h5>Winner</h5>
+                        <p>Ryuga</p>
+                    </div>
+                    <div className="col-item">
+                        <h5>Prize pool</h5>
+                        <p>Discord Nitro X 3 Months, 1 Core VPS</p>
+                    </div>
+                </div>
             </div>
         </Link>
     )
 }
-
-export default Event
