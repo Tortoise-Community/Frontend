@@ -4,11 +4,11 @@ import "./styles/EventToolbar.scss";
 
 export default function EventToolBar(){
     return (
-        <div className="card">
+        <div className="card event-card">
             <div className="card-body">
                 <ul className="event-icon-list">
                     <li>
-                        <i className="bi bi-people"/>
+                        <i className="bi bi-people-fill"/>
                         <h6>34</h6>
                         <span>Signups</span>
                     </li>
