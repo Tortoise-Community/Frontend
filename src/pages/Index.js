@@ -5,7 +5,7 @@ import ProjectSection from "../sections/ProjectSection";
 
 function Index() {
     return (
-        <div className="Index">
+        <div>
             <Header>
                 <div className="container">
                     <div className="row">

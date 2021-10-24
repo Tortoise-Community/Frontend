@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function Contact(){
     return (
-        <div className="contact">
+        <div>
             <Header/>
             <section>
                 <div className="container box-sizing-border-box">
@@ -131,10 +131,9 @@ export default function Contact(){
                                                     <input className="form-control" type="text" placeholder="https://discord.gg/99SKwQd"
                                                            name="server-invite"/>
                                                 </div>
-
                                             </div>
-
-                                            <br/><textarea placeholder="Message" className="form-control" name="message"/>
+                                            <br/>
+                                            <textarea placeholder="Message" className="form-control" name="message"/>
                                             <br/>
                                             <button className="btn btn-outline-secondary" type="submit">Send</button>
 
