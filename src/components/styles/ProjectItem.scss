@@ -6,8 +6,6 @@ h5 {
 .card {
     &:hover {
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-        -webkit-transform: translateY(-3px) translateZ(0);
-        -moz-transform: translateY(-3px) translateZ(0);
         transform: translateY(-3px) translateZ(0);
     }
 }

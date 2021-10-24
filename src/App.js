@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Events from "./pages/Events";
 import EventPage from "./pages/EventPage";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Rules from "./pages/Rules";
 
 function App() {
   return (
@@ -15,9 +17,8 @@ function App() {
           <Route path="/events/:slug" component={EventPage}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
-          <Route path="/privacy" component={About}/>
-          <Route path="/rules" component={About}/>
-          <Route path="/resources" component={About}/>
+          <Route path="/privacy-policy" component={Privacy}/>
+          <Route path="/rules" component={Rules}/>
         </Switch>
       </BrowserRouter>
   );
