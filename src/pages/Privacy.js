@@ -1,7 +1,15 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Section from "../components/Section";
 
 export default function Privacy() {
     return (
-        <h1>Privacy</h1>
+        <div>
+            <Header/>
+            <Section title={"Privacy Policy"}>
+            </Section>
+            <Footer/>
+        </div>
     )
 }
