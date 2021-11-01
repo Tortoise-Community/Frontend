@@ -28,9 +28,15 @@ export default function ProjectSection() {
    return (
        <Section title={"Projects"}>
            <div className="row g-4">
-               {projects.map((projectItem) => <ProjectItem
-               data={projectItem}
-               />)
+               {projects.map((projectItem) =>
+                   (
+                       <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+                           <ProjectItem
+                               data={projectItem}
+                           />
+                       </div>
+                       )
+               )
                }
            </div>
        </Section>
