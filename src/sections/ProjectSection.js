@@ -5,7 +5,18 @@ import Section from "../components/Section";
 import axios from 'axios';
 
 export default function ProjectSection() {
-   const [projects, setProjects] = useState([{stars: 0}]);
+   const [projects, setProjects] = useState(
+       [
+           {
+               stars: 0,
+               commits: 0,
+               forks: 0,
+               language: "",
+               name: "",
+               short_desc: "",
+           }
+       ]
+   );
 
    useEffect( () => {
        const fetchData = async () => {
