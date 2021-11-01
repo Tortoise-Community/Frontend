@@ -28,12 +28,12 @@ class apiHandler{
 
 }
 
-class WebApiHandler extends apiHandler {
+export default class WebApiHandler extends apiHandler {
     constructor() {
-        super("http://tortoisecommunity.co:8000");
+        super("http://144.172.71.12:8000");
     }
 
     async getProjects(){
-        return await this.instance.get("/projects")
+        return await this.instance.get("/projects/")
     }
 }

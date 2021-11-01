@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import ProjectItem from "../components/ProjectItem";
 import Section from "../components/Section";
-import axios from 'axios';
+import WebApiHandler from "../api/apiHandler";
+
+const api = new WebApiHandler()
 
 export default function ProjectSection() {
    const [projects, setProjects] = useState(
@@ -17,11 +19,10 @@ export default function ProjectSection() {
            }
        ]
    );
-
    useEffect( () => {
        const fetchData = async () => {
-           const resp = await axios.get("http://www.tortoisecommunity.co:8000/projects/");
-           setProjects(resp.data);
+           const projects = await api.getProjects();
+           setProjects(projects.data)
        };
        fetchData();
    }, [])
