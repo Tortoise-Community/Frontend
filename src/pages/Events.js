@@ -4,7 +4,11 @@ import Event from '../components/Event'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Section from "../components/Section";
-import axios from "axios";
+
+import WebApiHandler from "../api/apiHandler";
+
+const api = new WebApiHandler();
+
 function Events() {
 
     const [Events, setEvents] = useState([
@@ -24,8 +28,8 @@ function Events() {
 
     useEffect( () => {
         const fetchData = async () => {
-            const resp = await axios.get("http://www.tortoisecommunity.co:8000/events/");
-            setEvents(resp.data);
+            const events = await api.getEvents();
+            setEvents(events.data);
         };
         fetchData();
     }, [])

@@ -4,7 +4,7 @@ import ProjectItem from "../components/ProjectItem";
 import Section from "../components/Section";
 import WebApiHandler from "../api/apiHandler";
 
-const api = new WebApiHandler()
+const api = new WebApiHandler();
 
 export default function ProjectSection() {
    const [projects, setProjects] = useState(

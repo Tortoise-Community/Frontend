@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 import './styles/Event.scss'
 
 export default function Event({data}) {
-    const renderParticipateBtn = () => {
-        if(data.status==="Upcoming")
-            return <button className="btn btn-default text-uppercase">Participate <i className="fas fa-arrow-right"/></button>
-    }
     return (
         <Link className="event-box border border-1" to={`/events/${data.slug}`}>
             <div className="event-body">
@@ -32,7 +28,7 @@ export default function Event({data}) {
                         <p>{data.prize}</p>
                     </div>
                 </div>
-                {renderParticipateBtn()}
+                {data.status === "Upcoming" && <button className="btn btn-default text-uppercase">Participate <i className="fas fa-arrow-right"/></button>}
             </div>
         </Link>
     )
