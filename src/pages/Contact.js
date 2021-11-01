@@ -53,8 +53,8 @@ export default function Contact(){
                                         <div className="col-lg-12 mt-3">
                                             <div className="form-group">
                                                 <label htmlFor="seeAnotherField">Subject</label><br/>
-                                                <select onChange="adjustContactForm(this.value)" className="form-control"
-                                                        id="subjectx" name="subject" required>
+                                                <select className="form-control"
+                                                        id="subject" name="subject" required>
                                                     <option value="none" selected disabled hidden> --select--</option>
                                                     <option value="Report-User">Report user</option>
                                                     <option value="Issue-Report">Report issue</option>

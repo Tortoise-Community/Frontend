@@ -1,20 +1,34 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useState } from 'react'
 import Event from '../components/Event'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Section from "../components/Section";
+import axios from "axios";
 function Events() {
 
     const [Events, setEvents] = useState([
         {
-            title: 'some title',
-            slug: 'fake-event',
-            desc: 'lorem ipsum dolor sit amet and more words to pad out the word count because vscodes lorem ipsum isnt working',
-            id: 1
+            pk: 0,
+            slug: "",
+            name: "",
+            short_desc: "",
+            host_name: "",
+            winner_name: "",
+            prize: "",
+            due_date: "",
+            end_date: "",
+            "event_tags": [],
         }
     ])
 
+    useEffect( () => {
+        const fetchData = async () => {
+            const resp = await axios.get("http://www.tortoisecommunity.co:8000/events/");
+            setEvents(resp.data);
+        };
+        fetchData();
+    }, [])
     return (
         <div>
             <Header/>
@@ -23,8 +37,7 @@ function Events() {
                         <div className="col-12-xl">
                             {Events.map((EventItem) => (
                                 <Event
-                                    {...EventItem}
-                                    key={EventItem.id}
+                                    data={EventItem}
                                 />
                             ))}
                         </div>

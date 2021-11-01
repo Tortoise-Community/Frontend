@@ -15,56 +15,56 @@ export default function Footer(){
                             <a href="/" className="custom-logo-link" rel="home">
                                 <img width="462" height="84" src={test} className="custom-logo" alt="Footer Logo" loading="lazy"/>
                             </a>
-                            <ul>
-                                <li>
-                                    <a href="/" target="_blank">
-                                        <i className="fab fa-youtube"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/" target="_blank">
-                                        <i className="fab fa-youtube"/>
-                                    </a>
-                                </li>                                
-                            </ul>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <a href="/" target="_blank">*/}
+                            {/*            <i className="fab fa-youtube"/>*/}
+                            {/*        </a>*/}
+                            {/*    </li>*/}
+                            {/*    <li>*/}
+                            {/*        <a href="/" target="_blank">*/}
+                            {/*            <i className="fab fa-youtube"/>*/}
+                            {/*        </a>*/}
+                            {/*    </li>                                */}
+                            {/*</ul>*/}
                         </div>
                     </div>
-                    <div className="footer-widget contact-links">
-                        <ul>
-                            <li>
-                                Services
-                            </li>
-                            <li>
-                                <i className="bi bi-file-text"/>
-                                <a href="#!">
-                                    <div className="details">
-                                        <span>Pastebin</span>
-                                    </div>
-                                </a>
-                            </li>
-                            {/*<li>*/}
-                            {/*    <i className="bi bi-cpu"/>*/}
-                            {/*    <a href="#">*/}
-                            {/*        <div className="details">*/}
-                            {/*            <span>API</span>*/}
-                            {/*        </div>*/}
-                            {/*    </a>*/}
-                            {/*</li>*/}
-                        </ul>
-                    </div>
-                    <div className="footer-widget">
-                        <ul className="menu">
-                            <li>About</li>
-                            <li className="menu-item"><a href="/rules"><span className="title">Rules</span></a></li>
-                            <li className="menu-item"><a href="/privacy-policy"><span className="title">Privacy Policy</span></a></li>
-                        </ul>
-                    </div>
+                    {/*<div className="footer-widget contact-links">*/}
+                    {/*    <ul>*/}
+                    {/*        <li>*/}
+                    {/*            Services*/}
+                    {/*        </li>*/}
+                    {/*        <li>*/}
+                    {/*            <i className="bi bi-file-text"/>*/}
+                    {/*            <a href="#!">*/}
+                    {/*                <div className="details">*/}
+                    {/*                    <span>Pastebin</span>*/}
+                    {/*                </div>*/}
+                    {/*            </a>*/}
+                    {/*        </li>*/}
+                    {/*        /!*<li>*!/*/}
+                    {/*        /!*    <i className="bi bi-cpu"/>*!/*/}
+                    {/*        /!*    <a href="#">*!/*/}
+                    {/*        /!*        <div className="details">*!/*/}
+                    {/*        /!*            <span>API</span>*!/*/}
+                    {/*        /!*        </div>*!/*/}
+                    {/*        /!*    </a>*!/*/}
+                    {/*        /!*</li>*!/*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
+                    {/*<div className="footer-widget">*/}
+                    {/*    <ul className="menu">*/}
+                    {/*        <li>About</li>*/}
+                    {/*        <li className="menu-item"><a href="/rules"><span className="title">Rules</span></a></li>*/}
+                    {/*        <li className="menu-item"><a href="/privacy-policy"><span className="title">Privacy Policy</span></a></li>*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
                     <div className="footer-widget">
                         <ul className="menu">
                             <li>Menu</li>
                             <li className="menu-item"><Link to="/"><span className="title">Home</span></Link></li>
                             <li className="menu-item"><Link to="/events"><span className="title">Events</span></Link></li>
-                            <li className="menu-item"><Link to="/about"><span className="title">About</span></Link></li>
+                            <li className="menu-item"><Link to="/rules"><span className="title">Rules</span></Link></li>
                             <li className="menu-item"><Link to="/contact"><span className="title">Contact</span></Link></li>
                         </ul>
                     </div>

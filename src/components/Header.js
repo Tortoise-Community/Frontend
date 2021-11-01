@@ -26,23 +26,23 @@ export default function Header(props){
                             <Link to="/events"><span>Events</span></Link>
                         </li>
                         <li className="menu-item">
-                            <Link to="/about"><span>About</span></Link>
+                            <Link to="/rules"><span>Rules</span></Link>
                         </li>
                         <li className="menu-item">
                             <Link to="/contact"><span>Contact</span></Link>
                         </li>
-                        <li
-                            className="menu-item menu-item-has-children">
-                            <a href="#!"><span>More</span></a>
-                            <ul className="sub-menu">
-                                <li className="menu-item">
-                                    <Link to="/rules"><span>Rules</span></Link>
-                                </li>
-                                <li className="menu-item">
-                                    <Link to="/privacy-policy"><span>Privacy</span></Link>
-                                </li>
-                            </ul>
-                        </li>
+                        {/*<li*/}
+                        {/*    className="menu-item menu-item-has-children">*/}
+                        {/*    <a href="#!"><span>More</span></a>*/}
+                        {/*    <ul className="sub-menu">*/}
+                        {/*        <li className="menu-item">*/}
+                        {/*            <Link to="/rules"><span>Rules</span></Link>*/}
+                        {/*        </li>*/}
+                        {/*        <li className="menu-item">*/}
+                        {/*            <Link to="/privacy-policy"><span>Privacy</span></Link>*/}
+                        {/*        </li>*/}
+                        {/*    </ul>*/}
+                        {/*</li>*/}
                         {/*<li className="login"><button className="btn-primary btn-login btn-sm"><i className={"fas fa-lock fa-sm"}/> login</button></li>*/}
                     </ul>
                 </div>
@@ -59,28 +59,28 @@ export default function Header(props){
                             <ul id="mobile_menu" className="menu">
                                 <li
                                     className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
-                                    <a href="index.htm"><span>Home</span></a></li>
+                                    <Link to="/" data-bs-dismiss="modal"><span>Home</span></Link></li>
                                 <li
-                                    className="menu-item"><a
-                                    href="/"><span>Events</span></a></li>
+                                    className="menu-item"><Link
+                                    to="/events" data-bs-dismiss="modal"><span>Events</span></Link></li>
                                 <li
-                                    className="menu-item"><a
-                                    href="/"><span>About</span></a></li>
+                                    className="menu-item"><Link
+                                    to="/rules" data-bs-dismiss="modal"><span>Rules</span></Link></li>
                                 <li
-                                    className="menu-item"><a
-                                    href="/"><span>Contact</span></a></li>
-                                <li
-                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                    <a><span>More</span></a>
-                                    <ul className="sub-menu">
-                                        <li
-                                            className="menu-item"><a
-                                            href="/"><span>Privacy</span></a></li>
-                                        <li
-                                            className="menu-item"><a
-                                            href="/"><span>Rules</span></a></li>
-                                    </ul>
-                                </li>
+                                    className="menu-item"><Link
+                                    to="/contact" data-bs-dismiss="modal"><span>Contact</span></Link></li>
+                                {/*<li*/}
+                                {/*    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">*/}
+                                {/*    <a><span>More</span></a>*/}
+                                {/*    <ul className="sub-menu">*/}
+                                {/*        <li*/}
+                                {/*            className="menu-item"><a*/}
+                                {/*            href="/"><span>Privacy</span></a></li>*/}
+                                {/*        <li*/}
+                                {/*            className="menu-item"><a*/}
+                                {/*            href="/"><span>Rules</span></a></li>*/}
+                                {/*    </ul>*/}
+                                {/*</li>*/}
                                 {/*<li className="login"><button className={"btn btn-primary btn-login btn-sm"}><i className="fas fa-lock fa-sm"/>&nbsp;&nbsp;login</button></li>*/}
                             </ul>
                         </div>
