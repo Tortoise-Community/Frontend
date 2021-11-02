@@ -23,28 +23,28 @@ export default function Event({data, loading}) {
                     <div className="card-body">
                         <div className="row">
                             <div className="col-5">
-                                <div className="inner-card animate-pulse"></div>
+                                <div className="inner-card animate-pulse"/>
                             </div>
                         </div>
                         <div className="row mt-3">
                             <div className="col-3">
-                                <div className="inner-card animate-pulse"></div>
+                                <div className="inner-card animate-pulse"/>
                             </div>
                         </div>
                         <div className="row mt-3">
                             <div className="col-12">
-                                <div className="inner-card animate-pulse"></div>
+                                <div className="inner-card animate-pulse"/>
                             </div>
                         </div>
                         <div className="row mt-2">
                             <div className="col-2">
-                                <div className="inner-card animate-pulse"></div>
+                                <div className="inner-card animate-pulse"/>
                             </div>
                             <div className="col-1">
-                                <div className="inner-card animate-pulse"></div>
+                                <div className="inner-card animate-pulse"/>
                             </div>
                             <div className="col-2">
-                                <div className="inner-card animate-pulse"></div>
+                                <div className="inner-card animate-pulse"/>
                             </div>
                         </div>
                     </div>
@@ -68,12 +68,12 @@ export default function Event({data, loading}) {
                 <div className="event-footer">
                     <div className="col">
                         <div className="col-2 mx-1">
-                            <div className="inner-card animate-pulse w-75"></div>
-                            <div className="inner-card animate-pulse mt-2"></div>
+                            <div className="inner-card animate-pulse w-75"/>
+                            <div className="inner-card animate-pulse mt-2"/>
                         </div>
                         <div className="col-3 mx-1">
-                            <div className="inner-card animate-pulse w-75"></div>
-                            <div className="inner-card animate-pulse mt-2"></div>
+                            <div className="inner-card animate-pulse w-75"/>
+                            <div className="inner-card animate-pulse mt-2"/>
                         </div>
                     </div>
                 </div>
