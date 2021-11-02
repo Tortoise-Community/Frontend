@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Contact(){
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('Report-User')
+    const [message, setMessage] = useState('')
+
     return (
         <div>
             <Header/>
@@ -43,18 +49,26 @@ export default function Contact(){
                                 <form className="comment-form">
                                     <div className="row">
                                         <div className="col-md-6">
-                                            <input className="form-control" type="text" placeholder="Name" name="name" required/>
+                                            <input className="form-control" type="text" placeholder="Name" name="name" required value={name} onChange={(e)=>{setName(e.target.value)}}/>
                                         </div>
                                         <div className="col-md-6">
                                             <input className="form-control" type="email" placeholder="Email"
                                                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" name="email"
-                                                   required/>
+                                                   required value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
                                         </div>
                                         <div className="col-lg-12 mt-3">
+
+
                                             <div className="form-group">
                                                 <label htmlFor="seeAnotherField">Subject</label><br/>
-                                                <select className="form-control"
-                                                        id="subject" name="subject" required>
+                                                <select
+                                                    className="form-control"
+                                                    id="subject" 
+                                                    name="subject" 
+                                                    required 
+                                                    value={subject}
+                                                    onChange={(e)=>setSubject(e.target.value)}
+                                                >
                                                     <option value="none" selected disabled hidden> --select--</option>
                                                     <option value="Report-User">Report user</option>
                                                     <option value="Issue-Report">Report issue</option>
@@ -65,10 +79,19 @@ export default function Contact(){
                                                     <option value="Other">Other</option>
                                                 </select>
                                             </div>
+
+
+
+
+
+
+
                                             <div id="other" className="collapse"><br/>
                                                 <label>Enter the subject:</label>
                                                 <input className="form-control" type="text" placeholder="subject" name="othersub"/>
                                             </div>
+
+
                                             <div id="user" className="row collapse">
                                                 <div className="col-md-6">
                                                     <label>Username:</label>
@@ -80,6 +103,8 @@ export default function Contact(){
                                                            pattern="[#]{1}[1-9]{4}"/>
                                                 </div>
                                             </div>
+
+
                                             <div id="infraction" className="row collapse">
                                                 <div className="col-md-6">
                                                     <label>Infraction type:</label><br/>
@@ -100,6 +125,8 @@ export default function Contact(){
                                                     <input className="form-control" type="text" name="reason" placeholder="Violated T&C"/>
                                                 </div>
                                             </div>
+
+
                                             <div id="sponsor" className="collapse">
                                                 <label>What would you like to sponsor:</label><br/>
                                                 <select name="sponsor-type" className="form-controly"
@@ -111,12 +138,16 @@ export default function Contact(){
                                                     <option value="Project">Project</option>
                                                 </select>
                                             </div>
+
+
                                             <div id="issue" className="row collapse">
                                                 <div className="col-md-12">
                                                     <label>Enter the issue: </label>
                                                     <input className="form-control" type="text" name="issue"/>
                                                 </div>
                                             </div>
+                                            
+                                            
                                             <div id="partner" className="row collapse">
                                                 <div className="col-md-6">
                                                     <label>Server Name:</label>
@@ -132,6 +163,8 @@ export default function Contact(){
                                                            name="server-invite"/>
                                                 </div>
                                             </div>
+
+                                            
                                             <br/>
                                             <textarea placeholder="Message" className="form-control" name="message"/>
                                             <br/>
