@@ -7,6 +7,8 @@ import WebApiHandler from "../api/apiHandler";
 const api = new WebApiHandler();
 
 export default function ProjectSection() {
+
+   const [loading, setLoading] = useState(true)
    const [projects, setProjects] = useState(
        [
            {
@@ -23,12 +25,13 @@ export default function ProjectSection() {
        const fetchData = async () => {
            const projects = await api.getProjects();
            setProjects(projects.data)
+           setLoading(false)
        };
        fetchData();
    }, [])
    return (
        <Section title={"Projects"}>
-           <div className="row g-4">
+           {!loading ? <div className="row g-4">
                {projects.map((projectItem) =>
                    (
                        <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
@@ -36,10 +39,10 @@ export default function ProjectSection() {
                                data={projectItem}
                            />
                        </div>
-                       )
+                    )
                )
                }
-           </div>
+           </div> : <img src='/images/loader.png' id='loader'/>}
        </Section>
    )
 }
