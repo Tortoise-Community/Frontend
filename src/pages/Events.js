@@ -9,7 +9,7 @@ import WebApiHandler from "../api/apiHandler";
 
 const api = new WebApiHandler();
 
-function Events() {
+export default function Events() {
 
     const [Events, setEvents] = useState([
         {
@@ -52,5 +52,3 @@ function Events() {
         </div>
     )
 }
-
-export default Events
