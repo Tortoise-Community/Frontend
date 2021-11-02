@@ -11,6 +11,8 @@ const api = new WebApiHandler();
 
 export default function Events() {
 
+    const [loading, setLoading] = useState(true)
+
     const [Events, setEvents] = useState([
         {
             pk: 0,
@@ -30,6 +32,7 @@ export default function Events() {
         const fetchData = async () => {
             const events = await api.getEvents();
             setEvents(events.data);
+            setLoading(false)
         };
         fetchData();
     }, [])
@@ -37,7 +40,7 @@ export default function Events() {
         <div>
             <Header/>
             <Section title={"Events"}>
-                    <div className="row">
+                    {!loading ? <div className="row">
                         <div className="col-12-xl">
                             {Events.map((EventItem) => (
                                 <Event
@@ -45,7 +48,7 @@ export default function Events() {
                                 />
                             ))}
                         </div>
-                    </div>
+                    </div> : <img src='/images/loader.png' id='loader'/>}
             </Section>
 
             <Footer/>
