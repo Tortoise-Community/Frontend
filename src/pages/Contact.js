@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ContactSections from "../components/ContactSections";
 
 export default function Contact(){
 
@@ -80,93 +81,10 @@ export default function Contact(){
                                                 </select>
                                             </div>
 
+                                            <ContactSections selectedOption={subject}/>
 
-
-
-
-
-
-                                            <div id="other" className="collapse"><br/>
-                                                <label>Enter the subject:</label>
-                                                <input className="form-control" type="text" placeholder="subject" name="othersub"/>
-                                            </div>
-
-
-                                            <div id="user" className="row collapse">
-                                                <div className="col-md-6">
-                                                    <label>Username:</label>
-                                                    <input className="form-control" type="text" placeholder="Ryuga_hideki" name="username"/>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label>Tag:</label>
-                                                    <input className="form-control" type="text" name="tag" placeholder="#1234"
-                                                           pattern="[#]{1}[1-9]{4}"/>
-                                                </div>
-                                            </div>
-
-
-                                            <div id="infraction" className="row collapse">
-                                                <div className="col-md-6">
-                                                    <label>Infraction type:</label><br/>
-                                                    <select name="infraction-type" className="form-controly">
-                                                        <option value="none" selected disabled hidden> --select--
-                                                        </option>
-                                                        <option value="mute">Mute</option>
-                                                        <option value="kick">Kick</option>
-                                                        <option value="ban">Ban</option>
-                                                    </select>
-                                                </div>
-                                                <br/>
-                                                <div className="col-md-6">
-                                                    <label>Date:</label><br/>
-                                                    <input className="form-control" type="date" className="form-controly"
-                                                           name="date"/><br/><br/>
-                                                    <label>Reason:</label>
-                                                    <input className="form-control" type="text" name="reason" placeholder="Violated T&C"/>
-                                                </div>
-                                            </div>
-
-
-                                            <div id="sponsor" className="collapse">
-                                                <label>What would you like to sponsor:</label><br/>
-                                                <select name="sponsor-type" className="form-controly"
-                                                        name="sponsor-type">
-                                                    <option value="none" selected disabled hidden>--select--</option>
-                                                    <option value="Coding-Event">Code Jam</option>
-                                                    <option value="CTF-Event">CTF-Event</option>
-                                                    <option value="Team-Events">Team-Event</option>
-                                                    <option value="Project">Project</option>
-                                                </select>
-                                            </div>
-
-
-                                            <div id="issue" className="row collapse">
-                                                <div className="col-md-12">
-                                                    <label>Enter the issue: </label>
-                                                    <input className="form-control" type="text" name="issue"/>
-                                                </div>
-                                            </div>
-                                            
-                                            
-                                            <div id="partner" className="row collapse">
-                                                <div className="col-md-6">
-                                                    <label>Server Name:</label>
-                                                    <input className="form-control" type="text" placeholder="Tortoise" name="server-name"/>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label>Server Topic</label>
-                                                    <input className="form-control" type="text" placeholder="Programmming " name="server-topic"/>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <label>Invitaiton link</label>
-                                                    <input className="form-control" type="text" placeholder="https://discord.gg/99SKwQd"
-                                                           name="server-invite"/>
-                                                </div>
-                                            </div>
-
-                                            
                                             <br/>
-                                            <textarea placeholder="Message" className="form-control" name="message"/>
+                                            <textarea placeholder="Message" className="form-control" name="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
                                             <br/>
                                             <button className="btn btn-outline-secondary" type="submit">Send</button>
 
