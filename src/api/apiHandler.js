@@ -37,7 +37,14 @@ export default class WebApiHandler extends apiHandler {
         return await this.instance.get("/projects/")
     }
 
+    async getProject(slug){
+        return await this.instance.get(`/projects/${slug}`)
+    }
+
     async getEvents(){
         return await this.instance.get("/events/")
+    }
+    async getEvent(slug){
+        return await this.instance.get(`/events/${slug}`)
     }
 }

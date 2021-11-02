@@ -18,6 +18,7 @@ export default function ProjectSection() {
                language: "",
                name: "",
                short_desc: "",
+               github: ""
            }
        ]
    );

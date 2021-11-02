@@ -1,13 +1,19 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import "./styles/ProjectItem.scss";
+
+/*Credits
+* Design for this component was inspired from the python discord website
+* https://www.pythondiscord.com/
+* Repository: https://github.com/python-discord/site
+* Recreated with bootstrap
+*/
 
 export default function ProjectItem({data, loading}) {
     return (
             <div className="card pt-md-3 px-md-2 pb--3 w-100">
                 {!loading ?
                     <div>
-                        <a className="stretched-link" href="#"><h5 className="card-header bg-transparent">
+                        <a className="stretched-link" href={data.github}><h5 className="card-header bg-transparent">
                             <i className="fab fa-github"/> {data.name}</h5></a>
                         <div className="card-body">
                             <p className="card-text text-dark">{data.short_desc}</p>
