@@ -4,7 +4,7 @@ import './styles/Event.scss'
 
 export default function Event({data, loading}) {
     return (
-        <Link className="event-box border border-1 w-100" to={`/events/${data.slug}`}>
+        <div className="event-box border border-1 w-100">
             {!loading ?
                 <div className="event-body">
                     <div className="col">
@@ -78,6 +78,6 @@ export default function Event({data, loading}) {
                     </div>
                 </div>
             }
-        </Link>
+        </div>
     )
 }
