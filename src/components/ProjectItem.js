@@ -4,7 +4,7 @@ import "./styles/ProjectItem.scss";
 
 export default function ProjectItem({data, loading}) {
     return (
-            <Link className="card pt-md-3 px-md-2 pb--3 w-100" to={`/projects/${data.slug}`}>
+            <div className="card pt-md-3 px-md-2 pb--3 w-100">
                 {!loading ?
                     <div>
                         <a className="stretched-link" href="#"><h5 className="card-header bg-transparent">
@@ -53,6 +53,6 @@ export default function ProjectItem({data, loading}) {
                         </div>
                     </div>
                 }
-            </Link>
+            </div>
     )
 }
