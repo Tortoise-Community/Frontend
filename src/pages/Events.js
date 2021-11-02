@@ -40,17 +40,17 @@ export default function Events() {
         <div>
             <Header/>
             <Section title={"Events"}>
-                    {!loading ? <div className="row">
+                    <div className="row">
                         <div className="col-12-xl">
                             {Events.map((EventItem) => (
                                 <Event
                                     data={EventItem}
+                                    loading={loading}
                                 />
                             ))}
                         </div>
-                    </div> : <img src='/images/loader.png' id='loader'/>}
+                    </div>
             </Section>
-
             <Footer/>
         </div>
     )

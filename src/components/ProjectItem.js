@@ -21,15 +21,17 @@ export default function ProjectItem({data, loading}) {
                         </div>
                     </div>
                     :
-                    <div className="card-body">
-                        <div className="row">
-                            <div className="col-5">
-                                <div className="inner-card animate-pulse"></div>
+                    <div>
+                        <div className="card-body">
+                            <div className="row">
+                                <div className="col-5">
+                                    <div className="inner-card animate-pulse"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="row mt-3">
-                            <div className="col-12">
-                                <div className="inner-card animate-pulse"></div>
+                            <div className="row mt-3">
+                                <div className="col-12">
+                                    <div className="inner-card animate-pulse"></div>
+                                </div>
                             </div>
                         </div>
                         <div className="card-footer bg-transparent mb--3">
