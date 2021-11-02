@@ -31,18 +31,18 @@ export default function ProjectSection() {
    }, [])
    return (
        <Section title={"Projects"}>
-           {!loading ? <div className="row g-4">
+            <div className="row g-4">
                {projects.map((projectItem) =>
                    (
                        <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                            <ProjectItem
-                               data={projectItem}
+                               data={projectItem} loading={loading}
                            />
                        </div>
                     )
                )
                }
-           </div> : <img src='/images/loader.png' id='loader'/>}
+           </div>
        </Section>
    )
 }

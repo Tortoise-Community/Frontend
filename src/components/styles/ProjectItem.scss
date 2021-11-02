@@ -26,3 +26,18 @@ h5 {
 .python {
     color: #3572a5;
 }
+
+.inner-card {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .9
+    }
+}
