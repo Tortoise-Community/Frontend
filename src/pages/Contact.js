@@ -27,8 +27,15 @@ export default function Contact(){
             topic: '',
             invitation: ''
         },
-        AppealInfraction: '',
-        DataDeletion: '',
+        AppealInfraction: {
+            InfractedUsername: '',
+            tag: '',
+            InfractionApplied: ''
+
+        },
+        DataDeletion: {
+            userID: ''
+        },
         Other: '',
     })
 
@@ -51,20 +58,6 @@ export default function Contact(){
                                     </ul>
                                 </div>
                             </div>
-                            <div className="social-links">
-                                <a href="https://github.com/Tortoise-Community" target="_blank"><i
-                                    className="fa fa-github fa-lg"/></a>
-                                <a href="https://www.reddit.com/user/Tortoise_Community" target="_blank"><i
-                                    className="fa fa-reddit fa-lg "/></a>
-                                <a href="https://twitter.com/PythonTortoise" target="_blank"><i
-                                    className="fa fa-twitter"/></a>
-                                <a href="https://www.youtube.com/channel/UCjx0JTXZWVd11edZY0aj63g" target="_blank"><i
-                                    className="fa fa-youtube-play fa-lg"/></a>
-                                <a href="https://www.facebook.com/Tortoise-Python-Community-103144314517830"
-                                   target="_blank"><i className="fa fa-facebook fa-lg"/></a>
-                                <a href="https://www.instagram.com/Tortoise_Python_Community/" target="_blank"><i
-                                    className="fa fa-instagram fa-lg"/></a>
-                            </div>
                         </div>
                         <div className="col-lg-8">
                             <div className="contact-form-warp">
@@ -82,7 +75,7 @@ export default function Contact(){
                                         <div className="col-lg-12 mt-3">
 
 
-                                            <div className="form-group">
+                                            <div className="form-group mb-3">
                                                 <label htmlFor="seeAnotherField">Subject</label><br/>
                                                 <select
                                                     className="form-control"

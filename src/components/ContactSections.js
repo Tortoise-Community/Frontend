@@ -60,7 +60,7 @@ function ContactSections({ selectedOption, formData, setFormData }) {
                     <label>What would you like to sponsor:</label><br/>
                     <select 
                         name="sponsor-type" 
-                        className="form-controly"    
+                        className="form-control"
                         value={formData.Sponsorship}
                         onChange={(e)=>{setFormData({...formData, Sponsorship: e.target.value})}}
                     >
@@ -123,9 +123,76 @@ function ContactSections({ selectedOption, formData, setFormData }) {
                 </div>
             )
         case 'Appeal-Infraction':
-            return <div>Appeal infraction</div>
+            return (
+                <div id="user" className="row">
+                    <div className="col-md-6">
+                        <label>Username:</label>
+                        <input
+                            className="form-control"
+                            type="text"
+                            placeholder="Ryuga_hideki"
+                            name="username"
+                            value={formData.AppealInfraction.InfractedUsername}
+                            onChange={(e)=>setFormData({...formData, AppealInfraction: {
+                                    InfractedUsername: e.target.value,
+                                    tag: formData.AppealInfraction.tag
+                                }})}
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <label>Tag:</label>
+                        <input
+                            className="form-control"
+                            type="text"
+                            name="tag"
+                            placeholder="#1234"
+                            pattern="[#]{1}[1-9]{4}"
+                            value={formData.AppealInfraction.tag}
+                            onChange={(e)=>setFormData({...formData, AppealInfraction: {
+                                    tag: e.target.value,
+                                    InfractedUsername: formData.AppealInfraction.InfractedUsername
+                                }})}
+                        />
+                    </div>
+                    <div className="col-md-12 mt-3">
+                        <label>Infraction Applied:</label>
+                        <select
+                            className="form-control"
+                            name="tag"
+                            placeholder="Permanent Ban"
+                            value={formData.AppealInfraction.InfractionApplied}
+                            onChange={(e)=>setFormData({...formData, AppealInfraction: {
+                                    tag: formData.AppealInfraction.tag,
+                                    InfractedUsername: formData.AppealInfraction.InfractedUsername,
+                                    InfractionApplied:  e.target.value
+                                }})}>
+                            <option value="none" selected disabled hidden>--select--</option>
+                            <option value="Short Mute">Short Mute</option>
+                            <option value="Long Mute">Long Mute</option>
+                            <option value="Temporary Ban">Temporary Ban</option>
+                            <option value="Permanent Ban">Permanent Ban</option>
+                        </select>
+                    </div>
+                </div>
+            )
         case 'Data-Deletion':
-            return <div>Data Deletion</div>
+            return (
+                <div id="user" className="row">
+                    <div className="col-md-6">
+                        <label>User ID:</label>
+                        <input
+                            className="form-control"
+                            type="text"
+                            placeholder="Ryuga_hideki"
+                            name="username"
+                            value={formData.DataDeletion.userID}
+                            onChange={(e)=>setFormData({...formData, DataDeletion: {
+                                    userID: e.target.value,
+                                }})}
+                        />
+                    </div>
+                </div>
+            )
         case 'Other':
             return (
                 <div id="other"><br/>
