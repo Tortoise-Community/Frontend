@@ -101,7 +101,6 @@ export default function Contact(){
                                             <textarea placeholder="Message" className="form-control" name="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
                                             <br/>
                                             <button className="btn btn-outline-secondary" type="submit">Send</button>
-
                                         </div>
                                     </div>
                                 </form>

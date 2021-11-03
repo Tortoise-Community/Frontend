@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectSection from "../sections/ProjectSection";
-import Section from "../components/Section";
 
 function Index() {
     return (
