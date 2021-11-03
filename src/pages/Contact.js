@@ -10,6 +10,28 @@ export default function Contact(){
     const [subject, setSubject] = useState('Report-User')
     const [message, setMessage] = useState('')
 
+    const [formData, setFormData] = useState({
+        subject: subject,
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+        ReportUser: {
+            reportedUserName: '',
+            tag: ''
+        },
+        IssueReport: '',
+        Sponsorship: '',
+        Partnership: {
+            name: '',
+            topic: '',
+            invitation: ''
+        },
+        AppealInfraction: '',
+        DataDeletion: '',
+        Other: '',
+    })
+
     return (
         <div>
             <Header/>
@@ -67,8 +89,8 @@ export default function Contact(){
                                                     id="subject" 
                                                     name="subject" 
                                                     required 
-                                                    value={subject}
-                                                    onChange={(e)=>setSubject(e.target.value)}
+                                                    value={formData.subject}
+                                                    onChange={(e)=>setFormData({...formData, subject: e.target.value})}
                                                 >
                                                     <option value="none" selected disabled hidden> --select--</option>
                                                     <option value="Report-User">Report user</option>
@@ -81,7 +103,7 @@ export default function Contact(){
                                                 </select>
                                             </div>
 
-                                            <ContactSections selectedOption={subject}/>
+                                            <ContactSections selectedOption={formData.subject} formData={formData} setFormData={setFormData}/>
 
                                             <br/>
                                             <textarea placeholder="Message" className="form-control" name="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
