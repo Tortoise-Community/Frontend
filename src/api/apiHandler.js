@@ -30,7 +30,7 @@ class apiHandler{
 
 export default class WebApiHandler extends apiHandler {
     constructor() {
-        super("http://144.172.71.12:8000");
+        super("https://web.tortoisecommunity.org");
     }
 
     async getProjects(){

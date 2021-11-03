@@ -11,7 +11,6 @@ export default function Contact(){
     const [message, setMessage] = useState('')
 
     const [formData, setFormData] = useState({
-        subject: subject,
         name: name,
         email: email,
         subject: subject,
