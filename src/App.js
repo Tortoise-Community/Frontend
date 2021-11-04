@@ -7,6 +7,7 @@ import EventPage from "./pages/EventPage";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Rules from "./pages/Rules";
+import './style-override.css'
 
 function App() {
   return (
