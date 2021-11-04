@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import ProjectItem from "../components/ProjectItem";
 import Section from "../components/Section";
-import WebApiHandler from "../api/apiHandler";
+import WebApiHandler from "../../api/apiHandler";
 
 const api = new WebApiHandler();
 

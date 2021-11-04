@@ -1,6 +1,6 @@
 import React from 'react';
 
-import test from "../logo.svg";
+import test from "../../logo.svg";
 import "./styles/Footer.scss";
 import { Link } from "react-router-dom";
 

@@ -18,7 +18,6 @@ class apiHandler{
             if (response.status === 200) {
                 return await  response.data;
             }
-
         }
         catch (err) {
             console.log(err)

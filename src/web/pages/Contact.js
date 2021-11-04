@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ContactSections from "../components/ContactSections";
+import ContactSections from "../sections/ContactSections";
 
 export default function Contact(){
 
