@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './styles/Event.scss'
 
 export default function Event({data, loading}) {

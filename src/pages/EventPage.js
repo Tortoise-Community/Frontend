@@ -8,7 +8,7 @@ import EventToolBar from "../components/EventToolBar";
 
 function EventPage() {
 
-    const {slug} = useParams()
+    const { slug } = useParams()
 
     return (
         <div>
