@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Sofia Pro&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
 /*SOCIAL SECTION */
 ul {
   padding: 0;
@@ -56,7 +56,7 @@ footer {
           >a {
             &::before {
               content: "\f104";
-              font-family: "Sofia Pro", sans-serif, sans-serif;
+              font-family: "Poppins", sans-serif, sans-serif;
               font-weight: bold;
               left: 20px;
               top: calc(50% - 7px);
@@ -97,7 +97,7 @@ footer {
           margin-right: 6px;
           &:after {
             content: "\f111";
-            font: 900 5px "Sofia Pro", sans-serif;
+            font: 900 5px "Poppins", sans-serif;
             margin-left: 6px;
           }
         }
@@ -111,14 +111,14 @@ footer {
     a {
       -webkit-transition: color 0.6s ease-in-out;
       transition: color 0.6s ease-in-out;
-      font: 1000 0.75em/1 "Sofia Pro", sans-serif;
+      font: 1000 0.75em/1 "Poppins", sans-serif;
       color: #fff;
       &:hover {
         color: #b4c3d2;
       }
     }
     p {
-      font: 1000 0.75em/1 "Sofia Pro", sans-serif;
+      font: 1000 0.75em/1 "Poppins", sans-serif;
       color: #fff;
       line-height: 22px;
     }
@@ -154,7 +154,7 @@ footer {
   }
   overflow: hidden;
   background-color: #000;
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: block;
   .custom-logo-link {
     img {
@@ -209,7 +209,7 @@ footer {
             margin-bottom: 0;
           }
           >a {
-            font: 500 0.875em/1 "Sofia Pro", sans-serif, sans-serif;
+            font: 500 0.875em/1 "Poppins", sans-serif, sans-serif;
             color: #636f7d;
             text-transform: uppercase;
             -webkit-transition: color 0.8s ease-in-out;
@@ -223,7 +223,7 @@ footer {
             padding-left: 15px;
             li {
               a {
-                font: 700 0.75em/1 "Sofia Pro", sans-serif, sans-serif;
+                font: 700 0.75em/1 "Poppins", sans-serif, sans-serif;
                 color: #636f7d;
                 text-transform: uppercase;
               }
@@ -233,7 +233,7 @@ footer {
             }
           }
           &:first-of-type {
-            font: 1.375em/1 "Sofia Pro", sans-serif, sans-serif;
+            font: 1.375em/1 "Poppins", sans-serif, sans-serif;
             color: #fff;
             margin-bottom: 44px;
           }
@@ -253,12 +253,12 @@ footer {
             -webkit-justify-content: center;
             justify-content: center;
             span {
-              font: 700 1em/1 "Sofia Pro", sans-serif, sans-serif;
+              font: 700 1em/1 "Poppins", sans-serif, sans-serif;
               color: #fff;
               margin-bottom: 4px;
             }
             a {
-              font: 700 0.75em/1 "Sofia Pro", sans-serif, sans-serif;
+              font: 700 0.75em/1 "Poppins", sans-serif, sans-serif;
               color: #636f7d;
               -webkit-transition: color 0.6s ease-in-out;
               transition: color 0.6s ease-in-out;
@@ -303,7 +303,7 @@ footer {
           padding-bottom: 0;
           border: 0;
           a {
-            font: 500 0.875em/1 "Sofia Pro", sans-serif, sans-serif;
+            font: 500 0.875em/1 "Poppins", sans-serif, sans-serif;
             color: #fff;
             &:hover {
               opacity: 0.8;
@@ -318,7 +318,7 @@ footer {
       }
       a {
         color: #636f7d;
-        font: 500 0.875em "Sofia Pro", sans-serif, sans-serif;
+        font: 500 0.875em "Poppins", sans-serif, sans-serif;
         -webkit-transition: color 0.6s ease-in-out;
         transition: color 0.6s ease-in-out;
         text-transform: none !important;
@@ -330,7 +330,7 @@ footer {
   }
 }
 .section-header {
-  font-family: 'Sofia Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .social {
   display: -webkit-flex;
