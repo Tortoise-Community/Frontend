@@ -9,19 +9,31 @@ import Privacy from "./pages/Privacy";
 import Rules from "./pages/Rules";
 
 function App() {
-  return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Index}/>
-          <Route exact path="/events" component={Events}/>
-          <Route path="/events/:slug" component={EventPage}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/privacy-policy" component={Privacy}/>
-          <Route path="/rules" component={Rules}/>
-        </Switch>
-      </BrowserRouter>
-  );
+    console.log()
+    if (window.location.host.split(".")[0] === "paste") {
+        return (
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={Index}/>
+                </Switch>
+            </BrowserRouter>
+        );
+    }
+    else{
+        return (
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={Index}/>
+                    <Route exact path="/events" component={Events}/>
+                    <Route path="/events/:slug" component={EventPage}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route path="/privacy-policy" component={Privacy}/>
+                    <Route path="/rules" component={Rules}/>
+                </Switch>
+            </BrowserRouter>
+        )
+    }
 }
 
 export default App;
