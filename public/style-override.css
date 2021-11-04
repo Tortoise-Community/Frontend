@@ -1,8 +1,8 @@
 @font-face {
     font-family: "cubano";
-    src: url("./fonts/cubano/cubano-regular-webfont.eot");
-    src: url("./fonts/cubano/cubano-regular-webfont.woff") format("woff"),
-    url("./fonts/cubano/cubano-regular-webfont.svg#filename") format("svg");
+    src: url("fonts/cubano/cubano-regular-webfont.eot");
+    src: url("fonts/cubano/cubano-regular-webfont.woff") format("woff"),
+    url("fonts/cubano/cubano-regular-webfont.svg#filename") format("svg");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
