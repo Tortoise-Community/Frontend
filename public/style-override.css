@@ -5,7 +5,7 @@
     url("fonts/cubano/cubano-regular-webfont.svg#filename") format("svg");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia Pro&display=swap');
 
 :root {
     --bg: #0a0c11;
@@ -18,7 +18,7 @@ h1,h2,h3,h4{
     font-family: 'cubano' !important;
 }
 p, span, label {
-    font-family: "Poppins", sans-serif;
+    font-family: "Sofia Pro", sans-serif;
 }
 
 /***   BACKGROUND STYLES   ***/
@@ -109,7 +109,7 @@ p, span, label {
 
 .front-quote {
     color: #61EED1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sofia Pro', sans-serif;
     font-size: 19px !important;
 }
 .box-sizing-border-box{

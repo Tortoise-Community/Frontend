@@ -42,7 +42,7 @@ export default function Rules(){
 const style = {
     paragraph: {
         fontSize: 17,
-        fontFamily: "Poppins, san-serif",
+        fontFamily: "Sofia Pro, san-serif",
     },
     span: {
         color: "#000",
