@@ -5,6 +5,8 @@
     url("fonts/cubano/cubano-regular-webfont.svg#filename") format("svg");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Sofia Pro&display=swap');
+
 :root {
     --bg: #0a0c11;
     --primary: #46E9DC;
