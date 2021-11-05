@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../logo.svg";
+import logo from "../../logo.png";
 import "./styles/Header.scss";
 import {Link} from "react-router-dom";
 
@@ -14,7 +14,7 @@ export default function Header(props){
                         <span/>
                     </a>
 
-                    <a href="/" className="custom-logo-link" rel="home"><img width="462" height="84"
+                    <a href="/" className="custom-logo-link" rel="home"><img width="180"
                                                                              src={logo}
                                                                              className="custom-logo"
                                                                              alt="Logo" loading="lazy"/></a>

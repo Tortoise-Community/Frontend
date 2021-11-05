@@ -1,6 +1,6 @@
 import React from 'react';
 
-import test from "../../logo.svg";
+import logo from "../../logo.png";
 import "./styles/Footer.scss";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ export default function Footer(){
                     <div className="footer-widget">
                         <div className="social">
                             <a href="/" className="custom-logo-link" rel="home">
-                                <img width="462" height="84" src={test} className="custom-logo" alt="Footer Logo" loading="lazy"/>
+                                <img width="140" src={logo} className="custom-logo" alt="Footer Logo" loading="lazy"/>
                             </a>
                             {/*<ul>*/}
                             {/*    <li>*/}
