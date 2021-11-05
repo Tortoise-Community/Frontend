@@ -6,7 +6,7 @@
 }
 :root {
     --bg: #0a0c11;
-    --primary: #46E9DC;
+    --primary: #05ddff;
     --white: #ffffff;
     --secondary: #0a0c11;
 }
@@ -98,14 +98,14 @@ p, span, label {
 }
 
 .front-header {
-    background: -webkit-linear-gradient(180deg, #12DFF3, #AFFCAF);
+    background: -webkit-linear-gradient(180deg, #05ddff, #12dff3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
 .front-quote {
-    color: #61EED1;
+    color: #05ddff;
     font-family: 'Sofia Pro', sans-serif;
     font-size: 19px !important;
 }
