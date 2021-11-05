@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Section from "../components/Section";
 
-import WebApiHandler from "../api/apiHandler";
+import WebApiHandler from "../../api/apiHandler";
 
 const api = new WebApiHandler();
 
