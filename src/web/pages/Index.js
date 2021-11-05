@@ -10,7 +10,7 @@ function Index() {
                 <div className="container d-flex flex-column justify-content-center align-items-center text-center">
                     <h1 className="front-header mt-4">Tortoise Python Community</h1>
                     <p className="front-quote m-3">"We called him tortoise because he taught us!"</p>
-                    <button className="btn btn-outline-primary m-2">Join now <i className="bi bi-arrow-right-short"/></button>
+                    <a className="btn btn-outline-primary m-2" href="https://discord.gg/WeUtJ7hqum">Join now <i className="bi bi-arrow-right-short"/></a>
                     <div className="spacer m-5"/>
                 </div>
             </Header>
