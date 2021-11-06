@@ -6,11 +6,13 @@ import Footer from "../components/Footer";
 
 
 export default function Index() {
+    
+    const [editable, setEdit] = useState(true);
+    
     return (
         <div>
-            const [editable, setEdit] = useState(true);
             <Header/>
-            <TextEditor editable={true}/>
+            <TextEditor editable={editable}/>
             <Footer/>
         </div>
 
