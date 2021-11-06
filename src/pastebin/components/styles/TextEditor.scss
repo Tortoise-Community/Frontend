@@ -1,14 +1,15 @@
 .paste-bin {
   padding: 5px 30px 10px 25px;
-  background: #000;
+  background: #0a0c11;
   .editor {
-    background: #000;
+    background: #0a0c11;
     border: none;
     overflow: auto;
     outline: none;
     box-shadow: none;
     resize: none;
-    height: 70vw;
     color: white;
+    height: 100vw;
+    font-size: 13px;
   }
 }

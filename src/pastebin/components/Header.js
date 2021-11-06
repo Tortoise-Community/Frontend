@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./styles/Header.scss";
 
 
@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className="header row">
                 <div className="col">
-                    <h5>Tortoise Pastebin</h5>
+                    <h5 className="user-select-none">Tortoise Pastebin</h5>
                 </div>
                 <div className="col-auto header-controls">
                    <a href="#" data-bs-toggle="tooltip" title="Save (CTRL + S)" data-bs-placement="bottom"><i className="bi bi-clipboard fa-lg"/></a>
