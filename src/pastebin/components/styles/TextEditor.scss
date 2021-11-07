@@ -1,16 +1,20 @@
 .paste-bin {
   background: #0a0c11;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
   .editor {
     display: flex;
     flex-flow: row wrap;
+    min-height: 500px;
     .line-nos {
       background: #11101f;
       color: grey;
       display: flex;
       flex-flow: column wrap;
-      //padding: 0.3rem;
+      padding: 0 0.2rem;
       span {
-        //padding: 0.3rem;
+        padding: 0 0.2em;
         color: #62a9b9;
         font-size: 13px;
       }
@@ -19,14 +23,11 @@
     textarea {
       background: #1a1930;
       flex: 1;
-      height: 50vw;
       border: 0;
       padding-left: 7px;
       color: white;
       line-height: 1.2;
-      resize: none;
       overflow: hidden;
-      outline: none;
       &:focus {
         outline: none;
       }
