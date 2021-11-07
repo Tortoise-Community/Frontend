@@ -46,4 +46,10 @@ export default class WebApiHandler extends apiHandler {
     async getEvent(slug){
         return await this.instance.get(`/events/${slug}`)
     }
+    async getPaste(slug){
+        return await this.instance.get(`/paste/${slug}`)
+    }
+    async createPaste(body){
+        return await this.instance.post(`/paste/`, {body: body})
+    }
 }

@@ -12,21 +12,21 @@
       color: grey;
       display: flex;
       flex-flow: column wrap;
-      padding: 0 0.2rem;
       span {
-        padding: 0 0.2em;
+        padding-top: 5px;
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
         color: #62a9b9;
         font-size: 13px;
       }
     }
-
     textarea {
       background: #1a1930;
       flex: 1;
       border: 0;
-      padding-left: 7px;
+      padding-left: 4px;
       color: white;
-      line-height: 1.2;
+      line-height: 20px;
       overflow: hidden;
       &:focus {
         outline: none;
@@ -34,15 +34,4 @@
       font-size: 13px;
     }
   }
-  //.editor {
-  //  background: #0a0c11;
-  //  border: none;
-  //  overflow: auto;
-  //  outline: none;
-  //  box-shadow: none;
-  //  resize: none;
-  //  color: white;
-  //  height: 100vw;
-  //  font-size: 13px;
-  //}
 }
