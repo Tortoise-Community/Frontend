@@ -1,15 +1,47 @@
 .paste-bin {
-  padding: 5px 30px 10px 25px;
   background: #0a0c11;
   .editor {
-    background: #0a0c11;
-    border: none;
-    overflow: auto;
-    outline: none;
-    box-shadow: none;
-    resize: none;
-    color: white;
-    height: 100vw;
-    font-size: 13px;
+    display: flex;
+    flex-flow: row wrap;
+    .line-nos {
+      background: #11101f;
+      color: grey;
+      display: flex;
+      flex-flow: column wrap;
+      //padding: 0.3rem;
+      span {
+        //padding: 0.3rem;
+        color: #62a9b9;
+        font-size: 13px;
+      }
+    }
+
+    textarea {
+      background: #1a1930;
+      flex: 1;
+      height: 50vw;
+      border: 0;
+      padding-left: 7px;
+      color: white;
+      line-height: 1.2;
+      resize: none;
+      overflow: hidden;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+      font-size: 13px;
+    }
   }
+  //.editor {
+  //  background: #0a0c11;
+  //  border: none;
+  //  overflow: auto;
+  //  outline: none;
+  //  box-shadow: none;
+  //  resize: none;
+  //  color: white;
+  //  height: 100vw;
+  //  font-size: 13px;
+  //}
 }

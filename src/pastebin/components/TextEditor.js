@@ -7,14 +7,10 @@ export default function TextEditor({editable}) {
 
     return (
         <div className="paste-bin">
-            {editable?
-                <textarea className="editor w-100" onChange={e => setBody(e.target.value)}/>
-                :
-                <div>
-                    <div className="line-nos user-select-none"/>
-                    <pre>{body}</pre>
+                <div class="editor">
+                    <div className="line-nos user-select-none"><span>1</span></div>
+                    <textarea className="w-100" onChange={e => setBody(e.target.value)}/>
                 </div>
-            }
         </div>
     )
 }
