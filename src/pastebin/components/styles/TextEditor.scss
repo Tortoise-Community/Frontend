@@ -20,12 +20,13 @@
         font-size: 13px;
       }
     }
-    textarea {
-      background: #1a1930;
+    .text-input {
+      z-index: 1;
+      background: transparent;
       flex: 1;
       border: 0;
       padding-left: 4px;
-      color: white;
+      color: transparent;
       margin-top: 10;
       padding-bottom: 0;
       line-height: 24.5px;
@@ -34,6 +35,24 @@
         outline: none;
       }
       font-size: 13px;
+    }
+    .text-output {
+      background: #1a1930;
+      color: white;
+      margin-left: -99%;
+      z-index: 0;
+      flex: 1;
+      border: 0;
+      padding-left: 4px;
+      margin-top: 10;
+      padding-bottom: 0;
+      padding-top:4.2px;
+      line-height: 24.5px;
+      overflow: hidden;
+      &:focus {
+        outline: none;
+      }
+      font-size: 12px !important;
     }
   }
 }
