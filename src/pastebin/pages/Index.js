@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 
 
 export default function Index() {
-
+    
     const [editable, setEdit] = useState(true);
-
+    
     return (
         <div>
             <Header/>
