@@ -28,11 +28,11 @@ function Index() {
             <br />
             <p className="fs-5">
               {" "}
-              Tortoise is a community of Beginner to Advanced programmers.
-              <br />
-              We are a community of programmers and tech enthusiasts. We focus
-              on LeetCode, DSA and SDE interview preparation or just general
-              tech chat and chilling.
+              Tortoise is a community of programmers and tech enthusiasts.
+              <br /> We focus on LeetCode, DSA and SDE interview preparation or
+              just hanging out and chatting about tech. We host daily LeetCode
+              challenges and maintain open-source projects that anyone can
+              contribute to.
               <br />
               <br />
             </p>
