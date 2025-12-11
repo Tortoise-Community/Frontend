@@ -30,11 +30,12 @@ export default function ProjectSection() {
     },
     {
       stars: 1,
-      commits: 115,
+      commits: 116,
       forks: 1,
       language: "React",
       name: "Frontend",
-      short_desc: "React frontend for Tortoise Community Website",
+      short_desc:
+        "Web frontend built with React for Tortoise Community discord server",
       github: "https://github.com/Tortoise-Community/Frontend",
     },
   ]);
