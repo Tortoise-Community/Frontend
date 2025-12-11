@@ -34,7 +34,7 @@ export default function Events() {
       host_name: "@Braindead",
       winner_name: "@Leterax, @effyn",
       prize: "1 month Discord Nitro, Amnesia collection steam key",
-      due_date: "01/12/19",
+      due_date: "31/11/19",
       end_date: "01/12/19",
       event_tags: ["#coding", "#halloween", "#leetcode", "#logic"],
     },
