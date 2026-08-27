@@ -3,7 +3,7 @@
 $bg-obsidian: #0a0a0a;
 $bg-matte-panel: #121417;
 $bg-toolbar: #0f1114;
-$gold-accent: #c5a47e;
+$gold-accent: #e3e9f2;
 $border-color: rgba(255, 255, 255, 0.08);
 
 .labs-pdf-page {
@@ -95,7 +95,7 @@ $border-color: rgba(255, 255, 255, 0.08);
     &:hover:not(:disabled) {
       background: #20242c;
       border-color: $gold-accent;
-      color: #fff;
+      color: #36454f;
     }
 
     &:disabled {

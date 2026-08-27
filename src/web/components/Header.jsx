@@ -9,7 +9,7 @@ export default function Header(props) {
         <div className="container">
           <Link to="/" className="header-logo-link">
             <img
-              src="https://lairesit.sirv.com/Tortoise/tortoise-logo.png"
+              src="https://lairesit.sirv.com/Tortoise/tortoise-logo-og.png"
               alt="Tortoise Logo"
               className="main-logo"
             />

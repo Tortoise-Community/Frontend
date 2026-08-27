@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 $bg-dark: #0f0f0f;
-$gold-accent: #c5a47e; 
-$text-gold: #c5a47e;
+$gold-accent: #e3e9f2;
+$text-gold: #e3e9f2;
 $glass-white: rgba(255, 255, 255, 0.05);
 .disabled-link {
   pointer-events: none;
@@ -10,8 +10,8 @@ $glass-white: rgba(255, 255, 255, 0.05);
 
 .labs-hero-section {
   background-color: $bg-dark;
-  font-family: 'Montserrat', sans-serif;
-  min-height: 70vh; 
+  font-family: "Montserrat", sans-serif;
+  min-height: 70vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -33,22 +33,22 @@ $glass-white: rgba(255, 255, 255, 0.05);
   .labs-front-header {
     color: #fff !important; // White for primary, Gold for accent
     font-weight: 800;
-    font-size: 52px; 
+    font-size: 52px;
     letter-spacing: 4px;
-    
+
     // Gradient text effect on "Labs" if you want to get fancy
     &::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 3px;
-        background: $gold-accent;
-        margin: 10px auto;
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: $gold-accent;
+      margin: 10px auto;
     }
   }
 
   .labs-front-quote {
-    color: rgba(255, 255, 255, 0.6); 
+    color: rgba(255, 255, 255, 0.6);
     max-width: 600px;
     font-weight: 400;
     font-size: 18px;
@@ -69,7 +69,7 @@ $glass-white: rgba(255, 255, 255, 0.05);
 
     &:hover {
       background-color: transparent;
-      color: $gold-accent; 
+      color: $gold-accent;
       box-shadow: 0 0 20px rgba($gold-accent, 0.2);
     }
   }
@@ -78,7 +78,7 @@ $glass-white: rgba(255, 255, 255, 0.05);
   .labs-outline-btn {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #36454f;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 600;
@@ -87,14 +87,14 @@ $glass-white: rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
 
     &:hover {
-      border-color: #fff;
+      border-color: #36454f;
       background: rgba(255, 255, 255, 0.05);
     }
   }
 
   .labs-sub-hero-socials {
     .labs-social-link {
-      color: rgba(255, 255, 255, 0.4); 
+      color: rgba(255, 255, 255, 0.4);
       transition: all 0.3s ease;
 
       &:hover {

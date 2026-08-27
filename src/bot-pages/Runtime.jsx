@@ -76,7 +76,7 @@ const Runtime = () => {
                   <span style={{ color: "#f78c6c" }}>1</span>
                 </div>
                 <div className="output-label">
-                  {">"} Result: <span style={{ color: "#fff" }}>2</span>
+                  {">"} Result: <span style={{ color: "#36454F" }}>2</span>
                 </div>
               </div>
             </div>
