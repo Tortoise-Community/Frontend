@@ -1,5 +1,5 @@
 $bg-obsidian: #0a0a0a;
-$gold-accent: #c5a47e;
+$gold-accent: #e3e9f2;
 $text-muted: rgba(255, 255, 255, 0.4);
 $border-color: rgba(255, 255, 255, 0.05);
 
@@ -43,11 +43,11 @@ $border-color: rgba(255, 255, 255, 0.05);
     &.engine-link {
       color: inherit;
       .engine-name {
-        color: #fff;
+        color: #36454f;
         font-weight: 600;
       }
       &:hover {
-        color: #fff;
+        color: #36454f;
       }
     }
   }

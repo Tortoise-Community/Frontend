@@ -7,14 +7,14 @@ export default function HeroSection(props) {
     <div className="hero-master-container">
       <div className="container hero-content-grid">
         <div className="hero-brand-card">
-          <img
+          {/* <img
             src="https://lairesit.sirv.com/Tortoise/tortoise-logo.png"
             alt="Tortoise Logo"
             className="main-logo"
-          />
+          /> */}
 
           <h1 className="main-title">
-            Tortoise Programming <span>Community</span>
+            <span>Tortoise Programming </span>Community
           </h1>
           <div className="brand-badge">EST. 2019</div>
 
